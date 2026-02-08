@@ -106,13 +106,6 @@ export function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-border pt-8">
-          <div className="text-center text-foreground/50 text-sm">
-            <p>© 2024 AIWorldWideWorkforce. All rights reserved.</p>
-          </div>
-        </div>
       </div>
     </footer>
   )
