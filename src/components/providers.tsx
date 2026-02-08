@@ -22,7 +22,14 @@ export function Providers({ children }: { children: React.ReactNode }) {
     const savedDark = localStorage.getItem('dark-mode') === 'true'
 
     if (savedLang) setLanguageState(savedLang)
-    if (savedDark) setIsDarkState(savedDark)
+    setIsDarkState(savedDark)
+    
+    // Apply dark class on mount
+    if (savedDark) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
   }, [])
 
   const setLanguage = (lang: Language) => {

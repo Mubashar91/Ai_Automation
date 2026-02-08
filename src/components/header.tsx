@@ -62,9 +62,10 @@ export function Header() {
             <div className="relative">
               <button
                 onClick={() => setShowLangMenu(!showLangMenu)}
-                className="flex items-center gap-2 px-3 py-1 rounded-full border border-border hover:bg-foreground/5 transition-colors text-sm text-white"
+                className="flex items-center gap-2 px-3 py-1 rounded-full border border-border hover:bg-foreground/5 transition-colors text-sm"
+                style={{ color: !isDark ? '#000000' : '#ffffff' }}
               >
-                <Globe className="w-4 h-4" />
+                <Globe className="w-4 h-4" style={{ color: !isDark ? '#000000' : '#ffffff' }} />
                 {language.toUpperCase()}
               </button>
               {showLangMenu && (
@@ -79,7 +80,7 @@ export function Header() {
                       className={`block w-full text-left px-4 py-2 text-sm transition-colors ${
                         language === lang
                           ? 'bg-primary text-white font-bold'
-                          : 'text-white hover:bg-foreground/5'
+                          : 'text-slate-900 dark:text-white hover:bg-foreground/5'
                       }`}
                     >
                       {lang === 'en' ? 'English' : 'Deutsch'}
