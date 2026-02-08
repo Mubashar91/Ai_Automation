@@ -1,7 +1,6 @@
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { HeroSection } from '@/components/hero'
-import { Statistics } from '@/components/statistics'
 import { BenefitsSection } from '@/components/benefits'
 import { ChallengesSection } from '@/components/challenges'
 import { PillarsSection } from '@/components/pillars'
