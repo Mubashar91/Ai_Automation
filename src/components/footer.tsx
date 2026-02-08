@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Building } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-card text-foreground py-16 px-4 sm:px-6 lg:px-8 border-t border-border transition-colors duration-300">
+    <footer id="footer" className="bg-card text-foreground py-16 px-4 sm:px-6 lg:px-8 border-t border-border transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}
@@ -109,19 +109,8 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-foreground/50 text-sm">
+          <div className="text-center text-foreground/50 text-sm">
             <p>© 2024 AIWorldWideWorkforce. All rights reserved.</p>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-foreground transition-colors">
-                Privacy
-              </a>
-              <a href="#" className="hover:text-foreground transition-colors">
-                Terms
-              </a>
-              <a href="#" className="hover:text-foreground transition-colors">
-                Imprint
-              </a>
-            </div>
           </div>
         </div>
       </div>
