@@ -34,7 +34,7 @@ const benefits: Benefit[] = [
 
 export function AutomationBenefitsSection() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-300">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-4 animate-fade-in">
           <TrendingUp className="w-6 h-6 text-primary" />
@@ -47,7 +47,7 @@ export function AutomationBenefitsSection() {
           {benefits.map((benefit, index) => (
             <div key={index} className="flex gap-4 items-start animate-slide-up" style={{ animationDelay: `${0.1 * index}s` }}>
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold">
+                <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-primary-foreground font-bold">
                   ✓
                 </div>
               </div>

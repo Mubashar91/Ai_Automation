@@ -18,16 +18,20 @@ export function Header() {
   ]
 
   return (
-    <header className="fixed top-0 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-b border-border/50 z-50 shadow-sm transition-all duration-300">
+    <header className="fixed top-0 w-full bg-background/90 backdrop-blur-xl border-b border-border/50 z-50 shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-xl">AI</span>
+            <div className="w-[110px] h-[80px] flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+              <img
+                src={isDark ? '/LOGO%205%20DARK.png' : '/logo%201.png'}
+                alt="AIWorldWideWorkforce"
+                className="w-[110px] h-[80px] object-contain"
+              />
             </div>
             <h1 className="text-2xl font-bold">
-              <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">AI</span>
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">AI</span>
               <span className="text-foreground">WorldWideWorkforce</span>
             </h1>
           </div>
@@ -63,13 +67,12 @@ export function Header() {
               <button
                 onClick={() => setShowLangMenu(!showLangMenu)}
                 className="flex items-center gap-2 px-3 py-1 rounded-full border border-border hover:bg-foreground/5 transition-colors text-sm"
-                style={{ color: !isDark ? '#000000' : '#ffffff' }}
               >
-                <Globe className="w-4 h-4" style={{ color: !isDark ? '#000000' : '#ffffff' }} />
+                <Globe className="w-4 h-4 text-foreground" />
                 {language.toUpperCase()}
               </button>
               {showLangMenu && (
-                <div className="absolute top-full right-0 mt-2 bg-white dark:bg-slate-800 border border-border rounded-lg shadow-lg z-50">
+                <div className="absolute top-full right-0 mt-2 bg-card border border-border rounded-lg shadow-lg z-50">
                   {(['en', 'de'] as const).map((lang) => (
                     <button
                       key={lang}
@@ -79,8 +82,8 @@ export function Header() {
                       }}
                       className={`block w-full text-left px-4 py-2 text-sm transition-colors ${
                         language === lang
-                          ? 'bg-primary text-white font-bold'
-                          : 'text-slate-900 dark:text-white hover:bg-foreground/5'
+                          ? 'bg-primary text-primary-foreground font-bold'
+                          : 'text-foreground hover:bg-foreground/5'
                       }`}
                     >
                       {lang === 'en' ? 'English' : 'Deutsch'}
@@ -92,7 +95,7 @@ export function Header() {
 
             <Button
               asChild
-              className="bg-gradient-to-r from-primary to-purple-600 text-white rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105"
+              className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105"
             >
               <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
                 {t.nav.bookConsultation}
@@ -153,7 +156,7 @@ export function Header() {
                     }}
                     className={`px-3 py-1 rounded text-sm transition-colors ${
                       language === lang
-                        ? 'bg-primary text-white'
+                        ? 'bg-primary text-primary-foreground'
                         : 'bg-foreground/5 hover:bg-foreground/10'
                     }`}
                   >
@@ -166,7 +169,7 @@ export function Header() {
             <div className="px-4 pt-2">
               <Button
                 asChild
-                className="w-full bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
+                className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
               >
                 <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
                   {t.nav.bookConsultation}

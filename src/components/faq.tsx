@@ -45,7 +45,7 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-300">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
         <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
           Common Questions
@@ -58,14 +58,14 @@ export function FAQSection() {
           {faqItems.map((item, index) => (
             <div
               key={index}
-              className="group border-2 border-border dark:border-border/50 rounded-2xl overflow-hidden dark:bg-slate-900 animate-slide-up hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/20"
+              className="group border-2 border-border dark:border-border/50 rounded-2xl overflow-hidden bg-card animate-slide-up hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/20"
               style={{ animationDelay: `${0.05 * index}s` }}
             >
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="w-full px-6 py-5 flex items-center justify-between hover:bg-gradient-to-r hover:from-primary/5 hover:to-purple-600/5 transition-all duration-300"
+                className="w-full px-6 py-5 flex items-center justify-between hover:bg-gradient-to-r hover:from-primary/5 hover:to-primary/0 transition-all duration-300"
               >
                 <span className="font-bold text-foreground text-left group-hover:text-primary transition-colors">
                   {item.question}
@@ -80,7 +80,7 @@ export function FAQSection() {
               </button>
 
               {openIndex === index && (
-                <div className="px-6 py-5 bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-900 border-t-2 border-primary/20 dark:border-primary/30 animate-slide-down">
+                <div className="px-6 py-5 bg-card border-t-2 border-primary/20 dark:border-primary/30 animate-slide-down">
                   <p className="text-foreground/80 dark:text-foreground/90 leading-relaxed">
                     {item.answer}
                   </p>

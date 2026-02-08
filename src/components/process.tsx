@@ -51,7 +51,7 @@ const steps: ProcessStep[] = [
 
 export function ProcessSection() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-300">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
           Our Collaboration Process - Step by Step to Maximum Efficiency
@@ -64,7 +64,7 @@ export function ProcessSection() {
           {steps.map((step, idx) => (
             <Card
               key={step.step}
-              className="group border-2 border-primary/20 dark:border-primary/30 p-8 hover:border-primary dark:hover:border-primary/60 transition-all duration-500 dark:bg-slate-900 animate-slide-up hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-2 relative overflow-hidden"
+              className="group border-2 border-primary/20 dark:border-primary/30 p-8 hover:border-primary dark:hover:border-primary/60 transition-all duration-500 bg-card animate-slide-up hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-2 relative overflow-hidden"
               style={{ animationDelay: `${0.1 * idx}s` }}
             >
               {/* Shine effect */}
@@ -72,7 +72,7 @@ export function ProcessSection() {
               
               <div className="flex items-start gap-4 relative z-10">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-primary to-purple-600 text-white font-bold text-xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-primary to-primary/70 text-primary-foreground font-bold text-xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                     {step.step}
                   </div>
                 </div>

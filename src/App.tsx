@@ -1,7 +1,6 @@
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { HeroSection } from '@/components/hero'
-import { ClientLogos } from '@/components/client-logos'
 import { Statistics } from '@/components/statistics'
 import { BenefitsSection } from '@/components/benefits'
 import { ChallengesSection } from '@/components/challenges'
@@ -10,27 +9,27 @@ import { ProcessSection } from '@/components/process'
 import { AutomationBenefitsSection } from '@/components/automation-benefits'
 import { ToolsSection } from '@/components/tools'
 import { PackagesSection } from '@/components/packages'
-import { TestimonialsSection } from '@/components/testimonials'
 import { FAQSection } from '@/components/faq'
-import { CTASection } from '@/components/cta'
+import { CTASection, QuestionCTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
 
 function App() {
   return (
     <Providers>
-      <main className="bg-white dark:bg-slate-950 transition-colors duration-300">
+      <main className="bg-background transition-colors duration-300">
         <Header />
         <HeroSection />
-        <ClientLogos />
-        <Statistics />
+      
+        <QuestionCTA question="Find out how you can cut costs?" />
         <BenefitsSection />
         <ChallengesSection />
+        <QuestionCTA question="How can I scale without raising costs?" />
         <PillarsSection />
         <ProcessSection />
         <AutomationBenefitsSection />
         <ToolsSection />
         <PackagesSection />
-        <TestimonialsSection />
+        <QuestionCTA question="Where are hidden inefficiencies costing you money right now?" />
         <FAQSection />
         <CTASection />
         <Footer />

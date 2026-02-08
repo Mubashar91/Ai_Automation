@@ -34,7 +34,7 @@ const pillars: Pillar[] = [
 
 export function PillarsSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-300">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
           The 3 Pillars of Digitization and Process Optimization
@@ -47,15 +47,15 @@ export function PillarsSection() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl text-center border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 animate-slide-up dark:bg-slate-900 hover:-translate-y-3 relative overflow-hidden"
+              className="group p-8 rounded-2xl text-center border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 animate-slide-up bg-card hover:-translate-y-3 relative overflow-hidden"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               {/* Gradient background on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-purple-600/0 group-hover:from-primary/5 group-hover:to-purple-600/5 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/0 transition-all duration-500"></div>
               
               <div className="relative z-10">
                 <div className="flex justify-center mb-6">
-                  <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-purple-600/10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/0 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                     {pillar.icon}
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export function PillarsSection() {
           ))}
         </div>
 
-        <div className="mt-12 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 p-10 rounded-2xl border-2 border-primary/20 dark:border-primary/30 animate-slide-up shadow-xl relative overflow-hidden group" style={{ animationDelay: '0.3s' }}>
+        <div className="mt-12 bg-card p-10 rounded-2xl border-2 border-primary/20 dark:border-primary/30 animate-slide-up shadow-xl relative overflow-hidden group" style={{ animationDelay: '0.3s' }}>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
           <p className="text-foreground/80 dark:text-foreground/90 text-center text-lg leading-relaxed relative z-10">
             🚀 Most routine tasks can be automated with the right technology. We implement tailored

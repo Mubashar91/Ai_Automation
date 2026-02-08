@@ -1,39 +1,40 @@
 'use client'
 
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Building } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-foreground dark:bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+    <footer className="bg-card text-foreground py-16 px-4 sm:px-6 lg:px-8 border-t border-border transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">
-              AI<span className="text-white">WorldWideWorkforce</span>
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">AI</span>
+              <span className="text-foreground">WorldWideWorkforce</span>
             </h2>
-            <p className="text-white/80 mb-6 leading-relaxed">
+            <p className="text-foreground/70 mb-8 leading-relaxed">
               Intelligent automation solutions for businesses ready to transform their operations
               and scale efficiently.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-white/60 flex-shrink-0 mt-1" />
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold">Locations</p>
-                  <p className="text-white/80">Austria & Poland</p>
-                  <p className="text-white/80">Rynek Główny 28, 31-010 Krakow, Poland</p>
+                  <p className="font-semibold text-foreground mb-1">Headquarters</p>
+                  <p className="text-foreground/60 text-sm">Austria & Poland</p>
+                  <p className="text-foreground/50 text-xs">Rynek Główny 28, 31-010 Krakow</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-white/60 flex-shrink-0 mt-1" />
+                <Phone className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold">Phone</p>
+                  <p className="font-semibold text-foreground mb-1">Contact</p>
                   <a
                     href="tel:+4367762069472"
-                    className="text-white/80 hover:text-white transition-colors"
+                    className="text-foreground/70 hover:text-primary transition-colors text-sm"
                   >
                     +43 677 620 69 472
                   </a>
@@ -41,12 +42,12 @@ export function Footer() {
               </div>
 
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-white/60 flex-shrink-0 mt-1" />
+                <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold">Email</p>
+                  <p className="font-semibold text-foreground mb-1">Email</p>
                   <a
                     href="mailto:admin@aiworldwideworkforce.com"
-                    className="text-white/80 hover:text-white transition-colors"
+                    className="text-foreground/70 hover:text-primary transition-colors text-sm"
                   >
                     admin@aiworldwideworkforce.com
                   </a>
@@ -57,44 +58,67 @@ export function Footer() {
 
           {/* Company Details */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Company Information</h3>
-
-            <div className="space-y-4 text-white/80">
-              <div>
-                <p className="font-semibold text-white">Company Name</p>
-                <p>AIWorldWideWorkforce</p>
+            <div className="flex items-center gap-2 mb-6">
+              <Building className="w-5 h-5 text-primary" />
+              <h3 className="text-lg font-semibold text-foreground">Company</h3>
+            </div>
+            
+            <div className="space-y-3">
+              <div className="pb-3 border-b border-border/20">
+                <p className="text-xs text-foreground/50 mb-1">Legal Name</p>
+                <p className="text-sm font-medium text-foreground">AIWorldWideWorkforce</p>
               </div>
-
-              <div>
-                <p className="font-semibold text-white">Registration No.</p>
-                <p>0001194589</p>
+              <div className="pb-3 border-b border-border/20">
+                <p className="text-xs text-foreground/50 mb-1">Registration</p>
+                <p className="text-sm font-medium text-foreground">0001194589</p>
               </div>
-
-              <div>
-                <p className="font-semibold text-white">VAT ID</p>
-                <p>PL 6762702873</p>
+              <div className="pb-3 border-b border-border/20">
+                <p className="text-xs text-foreground/50 mb-1">VAT ID</p>
+                <p className="text-sm font-medium text-foreground">PL 6762702873</p>
               </div>
-
               <div>
-                <p className="font-semibold text-white">Represented by</p>
-                <p>Gigel Nerghes</p>
+                <p className="text-xs text-foreground/50 mb-1">Management</p>
+                <p className="text-sm font-medium text-foreground">Gigel Nerghes</p>
               </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold text-foreground mb-6">Resources</h3>
+            
+            <div className="space-y-2">
+              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
+                Privacy Policy
+              </a>
+              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
+                Terms of Service
+              </a>
+              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
+                Imprint
+              </a>
+              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
+                Documentation
+              </a>
+              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
+                Contact Support
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-white/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-white/60 text-sm">
+        {/* Bottom Bar */}
+        <div className="border-t border-border pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-foreground/50 text-sm">
             <p>© 2024 AIWorldWideWorkforce. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
+              <a href="#" className="hover:text-foreground transition-colors">
+                Privacy
               </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Service
+              <a href="#" className="hover:text-foreground transition-colors">
+                Terms
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-foreground transition-colors">
                 Imprint
               </a>
             </div>

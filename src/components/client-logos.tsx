@@ -8,7 +8,7 @@ export function ClientLogos() {
   ]
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 border-y border-border">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background border-y border-border">
       <div className="max-w-7xl mx-auto">
         <h3 className="text-center text-2xl font-bold text-foreground mb-4 animate-fade-in">Clients Who Trust Us</h3>
         <p className="text-center text-sm text-foreground/60 mb-12 animate-slide-up" style={{ animationDelay: '0.1s' }}>ProzessAutomation.ai® is a brand of Weber Media®</p>
@@ -16,7 +16,7 @@ export function ClientLogos() {
         <div className="relative overflow-hidden">
           <div className="flex animate-scroll hover:pause">
             {[...clients, ...clients, ...clients].map((client, i) => (
-              <div key={i} className="flex-shrink-0 w-48 h-24 mx-4 flex items-center justify-center bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 rounded-xl border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:-translate-y-1 group">
+              <div key={i} className="flex-shrink-0 w-48 h-24 mx-4 flex items-center justify-center bg-card rounded-xl border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:-translate-y-1 group">
                 <span className="text-foreground/70 group-hover:text-primary font-semibold text-sm transition-colors">{client}</span>
               </div>
             ))}

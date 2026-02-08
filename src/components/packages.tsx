@@ -57,7 +57,7 @@ const packages: Package[] = [
 
 export function PackagesSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-300">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
           Our Packages for Smart Process Automation
@@ -72,8 +72,8 @@ export function PackagesSection() {
               key={pkg.name}
               className={`p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group ${
                 pkg.highlighted
-                  ? 'bg-gradient-to-br from-primary via-purple-600 to-indigo-600 text-white border-0 shadow-2xl shadow-primary/50 scale-105'
-                  : 'bg-white dark:bg-slate-900 border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:scale-105'
+                  ? 'bg-gradient-to-br from-primary via-primary to-card text-primary-foreground border-0 shadow-2xl shadow-primary/20 scale-105'
+                  : 'bg-card border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:scale-105'
               }`}
               style={{ animationDelay: `${0.1 * idx}s` }}
             >
@@ -81,25 +81,25 @@ export function PackagesSection() {
                 <>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <div className="mb-4 relative z-10">
-                    <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">
+                    <span className="inline-block px-4 py-1.5 bg-background/20 backdrop-blur-sm text-primary-foreground text-xs font-bold rounded-full shadow-lg">
                       ⭐ MOST POPULAR
                     </span>
                   </div>
                 </>
               )}
 
-              <h4 className={`text-2xl font-bold mb-2 ${pkg.highlighted ? 'text-white' : 'text-foreground'}`}>
+              <h4 className={`text-2xl font-bold mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
                 {pkg.name}
               </h4>
-              <p className={`mb-6 text-sm ${pkg.highlighted ? 'text-white/80' : 'text-foreground/60'}`}>
+              <p className={`mb-6 text-sm ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
                 {pkg.description}
               </p>
 
               <ul className="space-y-3 mb-8 flex-1 text-sm">
                 {pkg.features.map((feature, index) => (
                   <li key={index} className="flex gap-3 items-start">
-                    <Check className={`w-4 h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-white' : 'text-primary'}`} />
-                    <span className={pkg.highlighted ? 'text-white/90' : 'text-foreground/70'}>{feature}</span>
+                    <Check className={`w-4 h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
+                    <span className={pkg.highlighted ? 'text-primary-foreground/90' : 'text-foreground/70'}>{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -107,8 +107,8 @@ export function PackagesSection() {
               <Button
                 className={`w-full rounded-xl py-6 text-base font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
-                    ? 'bg-white text-primary hover:bg-white/95 hover:shadow-xl hover:scale-105'
-                    : 'bg-gradient-to-r from-primary to-purple-600 text-white hover:shadow-xl hover:shadow-primary/50 hover:scale-105'
+                    ? 'bg-background text-foreground hover:bg-background/95 hover:shadow-xl hover:scale-105'
+                    : 'bg-primary text-primary-foreground hover:shadow-xl hover:shadow-primary/30 hover:scale-105'
                 }`}
               >
                 Get Started

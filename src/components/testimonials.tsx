@@ -67,7 +67,7 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-300">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
           Clients Who Trust Us
@@ -80,11 +80,11 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="p-6 bg-white dark:bg-slate-900 border border-border dark:border-border/50 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 transition-all duration-500 rounded-2xl animate-slide-up group hover:-translate-y-2 relative overflow-hidden"
+              className="p-6 bg-card border border-border dark:border-border/50 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 transition-all duration-500 rounded-2xl animate-slide-up group hover:-translate-y-2 relative overflow-hidden"
               style={{ animationDelay: `${0.05 * index}s` }}
             >
               {/* Gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-purple-600/0 group-hover:from-primary/5 group-hover:to-purple-600/5 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/0 transition-all duration-500"></div>
               
               <div className="relative z-10">
               <div className="flex gap-1 mb-4">

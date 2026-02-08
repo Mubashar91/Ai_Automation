@@ -9,7 +9,7 @@ export function Statistics() {
   ]
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-indigo-700 to-blue-800 text-white transition-colors duration-300 overflow-hidden relative">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-card to-background text-foreground transition-colors duration-300 overflow-hidden relative">
       {/* Animated grid background */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{ 
@@ -23,11 +23,11 @@ export function Statistics() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {stats.map((stat, i) => (
             <div key={i} className="text-center animate-slide-up group" style={{ animationDelay: `${i * 0.1}s` }}>
-              <div className="inline-block p-5 bg-white/10 backdrop-blur-sm rounded-3xl mb-6 group-hover:bg-white/20 transition-all group-hover:scale-110 group-hover:rotate-3 shadow-2xl">
+              <div className="inline-block p-5 bg-card/60 backdrop-blur-sm rounded-3xl mb-6 group-hover:bg-card/80 transition-all group-hover:scale-110 group-hover:rotate-3 shadow-2xl">
                 <stat.icon className="w-14 h-14 mx-auto" />
               </div>
               <div className="text-7xl font-extrabold mb-3 group-hover:scale-110 transition-transform tracking-tight">{stat.value}</div>
-              <p className="text-white/95 text-lg font-medium">{stat.label}</p>
+              <p className="text-foreground/90 text-lg font-medium">{stat.label}</p>
             </div>
           ))}
         </div>
