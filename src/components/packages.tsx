@@ -1,69 +1,94 @@
 import { Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-
-interface Package {
-  name: string
-  description: string
-  features: string[]
-  highlighted?: boolean
-}
-
-const packages: Package[] = [
-  {
-    name: 'Starter',
-    description: 'Optimize One Business Area',
-    features: [
-      'For companies that want to automate a specific area',
-      'Perfect for automating Sales, HR, Finance, or IT processes',
-      'Initial automation solutions for increased efficiency',
-      'Analysis & automation of one business area',
-      'Smart process optimization for time & cost savings',
-      'Integration into existing systems (CRM, ERP, Accounting)',
-      'Optimized workflows with automation',
-      'Monthly monitoring & data-driven improvements',
-    ],
-  },
-  {
-    name: 'Growth',
-    description: 'Scalable Automation for Multiple Departments',
-    features: [
-      'For companies aiming to automate several departments',
-      'Automate Sales, HR, Finance & Operations seamlessly',
-      'Scalable automation with connected workflows',
-      'Automation & linking of multiple business areas',
-      'Advanced security & access controls for teams',
-      'Company-wide process strategy for long-term efficiency',
-      'Dedicated consultant & tailored strategy',
-      'Live dashboards with real-time analytics',
-    ],
-    highlighted: true,
-  },
-  {
-    name: 'Enterprise',
-    description: 'Custom Automation, Integrations & Software',
-    features: [
-      'For enterprises needing highly customized solutions',
-      'Fully tailored process automation',
-      'Custom software, tools & integrations',
-      'Seamless system integration for maximum efficiency',
-      'End-to-end automation strategy',
-      'Dedicated support team',
-      'Priority implementation',
-      'Custom SLA agreements',
-    ],
-  },
-]
+import { useLanguage } from '@/components/providers'
+import { languages } from '@/lib/languages'
 
 export function PackagesSection() {
+  const { language } = useLanguage()
+  const t = languages[language]
+
+  const packages = [
+    {
+      name: language === 'en' ? 'Starter' : 'Starter',
+      description: language === 'en' ? 'Optimize One Business Area' : 'Optimieren Sie Einen Geschäftsbereich',
+      features: language === 'en' ? [
+        'For companies that want to automate a specific area',
+        'Perfect for automating Sales, HR, Finance, or IT processes',
+        'Initial automation solutions for increased efficiency',
+        'Analysis & automation of one business area',
+        'Smart process optimization for time & cost savings',
+        'Integration into existing systems (CRM, ERP, Accounting)',
+        'Optimized workflows with automation',
+        'Monthly monitoring & data-driven improvements',
+      ] : [
+        'Für Unternehmen, die einen bestimmten Bereich automatisieren möchten',
+        'Perfekt für die Automatisierung von Vertriebs-, HR-, Finanz- oder IT-Prozessen',
+        'Erste Automatisierungslösungen für mehr Effizienz',
+        'Analyse & Automatisierung eines Geschäftsbereichs',
+        'Intelligente Prozessoptimierung für Zeit- und Kostenersparnis',
+        'Integration in bestehende Systeme (CRM, ERP, Buchhaltung)',
+        'Optimierte Workflows mit Automatisierung',
+        'Monatliches Monitoring & datenbasierte Verbesserungen',
+      ],
+    },
+    {
+      name: language === 'en' ? 'Growth' : 'Wachstum',
+      description: language === 'en' ? 'Scalable Automation for Multiple Departments' : 'Skalierbare Automatisierung Für Mehrere Abteilungen',
+      features: language === 'en' ? [
+        'For companies aiming to automate several departments',
+        'Automate Sales, HR, Finance & Operations seamlessly',
+        'Scalable automation with connected workflows',
+        'Automation & linking of multiple business areas',
+        'Advanced security & access controls for teams',
+        'Company-wide process strategy for long-term efficiency',
+        'Dedicated consultant & tailored strategy',
+        'Live dashboards with real-time analytics',
+      ] : [
+        'Für Unternehmen, die mehrere Abteilungen automatisieren möchten',
+        'Automatisieren Sie Vertrieb, HR, Finanzen & Betrieb nahtlos',
+        'Skalierbare Automatisierung mit verbundenen Workflows',
+        'Automatisierung & Verknüpfung mehrerer Geschäftsbereiche',
+        'Erweiterte Sicherheit & Zugriffskontrollen für Teams',
+        'Unternehmensweite Prozessstrategie für langfristige Effizienz',
+        'Dedizierter Berater & maßgeschneiderte Strategie',
+        'Live-Dashboards mit Echtzeit-Analysen',
+      ],
+      highlighted: true,
+    },
+    {
+      name: language === 'en' ? 'Enterprise' : 'Unternehmen',
+      description: language === 'en' ? 'Custom Automation, Integrations & Software' : 'Individuelle Automatisierung, Integrationen & Software',
+      features: language === 'en' ? [
+        'For enterprises needing highly customized solutions',
+        'Fully tailored process automation',
+        'Custom software, tools & integrations',
+        'Seamless system integration for maximum efficiency',
+        'End-to-end automation strategy',
+        'Dedicated support team',
+        'Priority implementation',
+        'Custom SLA agreements',
+      ] : [
+        'Für Unternehmen, die hochgradig angepasste Lösungen benötigen',
+        'Vollständig maßgeschneiderte Prozessautomatisierung',
+        'Individuelle Software, Tools & Integrationen',
+        'Nahtlose Systemintegration für maximale Effizienz',
+        'End-to-End-Automatisierungsstrategie',
+        'Dediziertes Support-Team',
+        'Prioritäre Implementierung',
+        'Individuelle SLA-Vereinbarungen',
+      ],
+    },
+  ]
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
-          Our Packages for Smart Process Automation
+          {t.packages.title}
         </h3>
         <p className="text-lg text-foreground/60 dark:text-foreground/70 text-center mb-16 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          Flexible automation solutions tailored to your business size and needs
+          {t.packages.subtitle}
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -82,7 +107,7 @@ export function PackagesSection() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <div className="mb-4 relative z-10">
                     <span className="inline-block px-4 py-1.5 bg-background/20 backdrop-blur-sm text-primary-foreground text-xs font-bold rounded-full shadow-lg">
-                      ⭐ MOST POPULAR
+                      ⭐ {language === 'en' ? 'MOST POPULAR' : 'AM BELIEBTESTEN'}
                     </span>
                   </div>
                 </>
@@ -113,7 +138,7 @@ export function PackagesSection() {
                 }`}
               >
                 <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-                  Get Started
+                  {language === 'en' ? 'Get Started' : 'Jetzt Starten'}
                 </a>
               </Button>
             </Card>

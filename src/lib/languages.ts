@@ -55,6 +55,13 @@ export const languages = {
       title: 'Our Packages for Smart Process Automation',
       subtitle: 'Flexible automation solutions tailored to your business size and needs',
     },
+    process: {
+      title: 'Our Collaboration Process - Step by Step to Maximum Efficiency',
+      subtitle: 'A proven 4-step methodology to transform your operations',
+    },
+    automationBenefits: {
+      title: 'AI-Driven Process Automation',
+    },
     testimonials: {
       title: 'Clients Who Trust Us',
       subtitle: 'Real results from companies that transformed their operations',
@@ -123,6 +130,13 @@ export const languages = {
     packages: {
       title: 'Unsere Pakete Für Intelligente Prozessautomatisierung',
       subtitle: 'Flexible Automatisierungslösungen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind',
+    },
+    process: {
+      title: 'Unser Zusammenarbeitsprozess - Schritt Für Schritt Zur Maximalen Effizienz',
+      subtitle: 'Eine bewährte 4-Schritte-Methodik zur Transformation Ihrer Abläufe',
+    },
+    automationBenefits: {
+      title: 'KI-Gesteuerte Prozessautomatisierung',
     },
     testimonials: {
       title: 'Kunden, Die Uns Vertrauen',
