@@ -58,53 +58,6 @@ export function Footer() {
 
           {/* Company Details */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <Building className="w-5 h-5 text-primary" />
-              <h3 className="text-lg font-semibold text-foreground">Company</h3>
-            </div>
-            
-            <div className="space-y-3">
-              <div className="pb-3 border-b border-border/20">
-                <p className="text-xs text-foreground/50 mb-1">Legal Name</p>
-                <p className="text-sm font-medium text-foreground">AIWorldWideWorkforce</p>
-              </div>
-              <div className="pb-3 border-b border-border/20">
-                <p className="text-xs text-foreground/50 mb-1">Registration</p>
-                <p className="text-sm font-medium text-foreground">0001194589</p>
-              </div>
-              <div className="pb-3 border-b border-border/20">
-                <p className="text-xs text-foreground/50 mb-1">VAT ID</p>
-                <p className="text-sm font-medium text-foreground">PL 6762702873</p>
-              </div>
-              <div>
-                <p className="text-xs text-foreground/50 mb-1">Management</p>
-                <p className="text-sm font-medium text-foreground">Gigel Nerghes</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-foreground mb-6">Resources</h3>
-            
-            <div className="space-y-2">
-              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
-                Privacy Policy
-              </a>
-              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
-                Terms of Service
-              </a>
-              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
-                Imprint
-              </a>
-              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
-                Documentation
-              </a>
-              <a href="#" className="block text-foreground/70 hover:text-primary transition-colors text-sm py-1">
-                Contact Support
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
