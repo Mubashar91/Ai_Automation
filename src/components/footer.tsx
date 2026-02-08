@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer id="footer" className="bg-card text-foreground py-16 px-4 sm:px-6 lg:px-8 border-t border-border transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
           {/* Company Info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">
@@ -58,6 +58,30 @@ export function Footer() {
 
           {/* Company Details */}
           <div>
+            <div className="flex items-center gap-2 mb-6">
+              <Building className="w-5 h-5 text-primary" />
+              <h3 className="text-lg font-semibold text-foreground">Company</h3>
+            </div>
+            
+            <div className="space-y-3">
+              <div className="pb-3 border-b border-border/20">
+                <p className="text-xs text-foreground/50 mb-1">Legal Name</p>
+                <p className="text-sm font-medium text-foreground">AIWorldWideWorkforce</p>
+              </div>
+              <div className="pb-3 border-b border-border/20">
+                <p className="text-xs text-foreground/50 mb-1">Registration</p>
+                <p className="text-sm font-medium text-foreground">0001194589</p>
+              </div>
+              <div className="pb-3 border-b border-border/20">
+                <p className="text-xs text-foreground/50 mb-1">VAT ID</p>
+                <p className="text-sm font-medium text-foreground">PL 6762702873</p>
+              </div>
+              <div>
+                <p className="text-xs text-foreground/50 mb-1">Management</p>
+                <p className="text-sm font-medium text-foreground">Gigel Nerghes</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
