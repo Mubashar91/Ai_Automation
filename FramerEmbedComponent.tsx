@@ -1,6 +1,12 @@
+// @ts-nocheck
+// This file is designed for Framer's code editor - ignore local TypeScript errors
 import { addPropertyControls, ControlType } from "framer"
 
-export default function EmbeddedSite({ url }) {
+interface Props {
+  url: string
+}
+
+export default function EmbeddedSite({ url }: Props) {
   return (
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <iframe

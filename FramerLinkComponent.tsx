@@ -1,6 +1,13 @@
+// @ts-nocheck
+// This file is designed for Framer's code editor - ignore local TypeScript errors
 import { addPropertyControls, ControlType } from "framer"
 
-export default function SiteLink({ url, buttonText }) {
+interface Props {
+  url: string
+  buttonText: string
+}
+
+export default function SiteLink({ url, buttonText }: Props) {
   return (
     <div
       onClick={() => window.open(url, "_blank")}
@@ -15,8 +22,8 @@ export default function SiteLink({ url, buttonText }) {
         borderRadius: "12px",
         transition: "transform 0.2s",
       }}
-      onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.02)"}
-      onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
+      onMouseEnter={(e: any) => e.currentTarget.style.transform = "scale(1.02)"}
+      onMouseLeave={(e: any) => e.currentTarget.style.transform = "scale(1)"}
     >
       <div style={{
         color: "white",
