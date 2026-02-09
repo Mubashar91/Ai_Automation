@@ -1,0 +1,5 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' https://framer.com https://*.framer.app https://*.framer.website"
+    X-Frame-Options = "ALLOWALL"

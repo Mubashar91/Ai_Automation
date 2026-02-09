@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://framer.com https://*.framer.app https://*.framer.website">
+    <link rel="icon" type="image/png" href="/APP%20ICON%20LOGO.png">
+    <title>AIWorldWideWorkforce - Process Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slide-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { animation: fade-in 0.6s ease-out; }
+        .animate-slide-up { animation: slide-up 0.6s ease-out; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="w-[110px] h-[80px] flex items-center justify-center mr-3">
+                        <img src="/logo%201.png" alt="AIWorldWideWorkforce" class="w-[110px] h-[80px] object-contain">
+                    </div>
+                    <h1 class="text-2xl font-bold">
+                        <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">AI</span>
+                        <span>WorldWideWorkforce</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex gap-8 items-center">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition-all text-sm font-medium">Home</a>
+                    <a href="#footer" class="text-gray-600 hover:text-blue-600 transition-all text-sm font-medium">Contact</a>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="bg-blue-600 text-white rounded-full px-6 py-2 text-sm hover:shadow-lg transition-all">Book Consultation</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-gray-50 to-gray-100 min-h-screen flex items-center">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-8">
+                <span class="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-semibold shadow-lg">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-blue-600"></span>
+                    Enterprise-Grade AI Automation
+                </span>
+            </div>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight animate-fade-in">
+                <span class="bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 bg-clip-text text-transparent">
+                    Automate Your Business Processes
+                </span>
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+                Transform your operations with intelligent automation solutions
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-9 py-6 text-base shadow-2xl transition-all font-semibold inline-flex items-center justify-center gap-2">
+                    Get Started Now
+                    <span>→</span>
+                </a>
+                <a href="#benefits" class="rounded-full px-9 py-6 text-base border-2 bg-white border-gray-200 hover:border-blue-600 transition-all font-semibold inline-flex items-center justify-center gap-2">
+                    Learn More
+                    <span>🎯</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question CTA 1 -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="rounded-3xl border border-gray-200 bg-white px-6 py-10 sm:px-10 sm:py-12 shadow-lg">
+                <div class="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Find out how you can cut costs?</h3>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="bg-blue-600 text-white rounded-full px-8 py-6 text-base font-bold hover:bg-blue-700 transition-all inline-flex items-center gap-3">
+                        Book Your Free Consultation
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-4xl md:text-5xl font-bold mb-6 text-center animate-fade-in">
+                <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                    Why Choose Us
+                </span>
+            </h3>
+            <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto animate-slide-up">
+                Transform your business with our proven automation solutions
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl hover:bg-gray-50 border border-gray-200 hover:border-blue-500 transition-all hover:shadow-lg">
+                    <div class="w-16 h-16 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Cost Reduction</h4>
+                    <p class="text-gray-600 leading-relaxed">Reduce operational costs by up to 30% through intelligent automation</p>
+                </div>
+                <div class="p-8 rounded-2xl hover:bg-gray-50 border border-gray-200 hover:border-blue-500 transition-all hover:shadow-lg">
+                    <div class="w-16 h-16 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Time Savings</h4>
+                    <p class="text-gray-600 leading-relaxed">Save 10+ hours weekly per team member with automated workflows</p>
+                </div>
+                <div class="p-8 rounded-2xl hover:bg-gray-50 border border-gray-200 hover:border-blue-500 transition-all hover:shadow-lg">
+                    <div class="w-16 h-16 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Scalability</h4>
+                    <p class="text-gray-600 leading-relaxed">Scale operations without proportional cost increases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4 text-center animate-fade-in">Common Business Challenges</h3>
+            <p class="text-lg text-gray-600 text-center mb-16 animate-slide-up">Issues that slow down growth and increase costs</p>
+            <div class="space-y-8">
+                <div class="border-l-4 border-blue-600 pl-6 py-3">
+                    <h4 class="text-xl font-bold mb-3">Manual Processes</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Too much time spent on repetitive tasks that could be automated</p>
+                </div>
+                <div class="border-l-4 border-blue-600 pl-6 py-3">
+                    <h4 class="text-xl font-bold mb-3">High Operational Costs</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Inefficient workflows leading to unnecessary expenses</p>
+                </div>
+                <div class="border-l-4 border-blue-600 pl-6 py-3">
+                    <h4 class="text-xl font-bold mb-3">Scaling Limitations</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Unable to grow without proportionally increasing headcount</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question CTA 2 -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="rounded-3xl border border-gray-200 bg-white px-6 py-10 sm:px-10 sm:py-12 shadow-lg">
+                <div class="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">How can I scale without raising costs?</h3>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="bg-blue-600 text-white rounded-full px-8 py-6 text-base font-bold hover:bg-blue-700 transition-all inline-flex items-center gap-3">
+                        Book Your Free Consultation
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4 text-center animate-fade-in">The 3 Pillars of Digitization and Process Optimization</h3>
+            <p class="text-lg text-gray-600 text-center mb-16 animate-slide-up">SaaS. Workflows. AI. — How to make your company efficient, scalable, and future-proof.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl text-center border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all bg-white">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-4 rounded-2xl bg-blue-100">
+                            <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Smart Software Solutions</h4>
+                    <p class="text-gray-600 leading-relaxed">Implement tailored software solutions to optimize HR, sales, finance, and operations.</p>
+                </div>
+                <div class="p-8 rounded-2xl text-center border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all bg-white">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-4 rounded-2xl bg-blue-100">
+                            <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Optimized Workflows & Automation</h4>
+                    <p class="text-gray-600 leading-relaxed">Design and implement efficient processes that eliminate manual work and reduce bottlenecks.</p>
+                </div>
+                <div class="p-8 rounded-2xl text-center border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all bg-white">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-4 rounded-2xl bg-blue-100">
+                            <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">AI-enhanced Process Improvement</h4>
+                    <p class="text-gray-600 leading-relaxed">Leverage AI and machine learning to continuously improve and optimize your operations.</p>
+                </div>
+            </div>
+            <div class="mt-12 bg-white p-10 rounded-2xl border-2 border-blue-200 shadow-xl">
+                <p class="text-gray-700 text-center text-lg leading-relaxed">
+                    🚀 Most routine tasks can be automated with the right technology. We implement tailored software solutions to optimize HR, sales, finance, and operations, improving efficiency and reducing overhead.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4 text-center animate-fade-in">Our Process</h3>
+            <p class="text-lg text-gray-600 text-center mb-12 animate-slide-up">From consultation to continuous improvement</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border-2 border-blue-200 p-8 rounded-2xl bg-white hover:shadow-2xl transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-400 text-white font-bold text-xl shadow-lg">1</div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-4">Initial Consultation - Discover Potentials</h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>In a non-binding conversation, we get to know your company and challenges</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Together, we identify where the greatest levers for more efficiency lie</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Discover opportunities for lower costs and smarter processes</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Free consultation to explore automation potential</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-blue-200 p-8 rounded-2xl bg-white hover:shadow-2xl transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-400 text-white font-bold text-xl shadow-lg">2</div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-4">Process Analysis - Uncover Bottlenecks & Find Solutions</h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Our experts closely examine your workflows</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Identify hidden time wasters and unnecessary cost centers</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Find automation opportunities across departments</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Create detailed optimization roadmap</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-blue-200 p-8 rounded-2xl bg-white hover:shadow-2xl transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-400 text-white font-bold text-xl shadow-lg">3</div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-4">Implementation - From Strategy to Reality</h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Implement the planned automations</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Seamlessly connect your systems</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Ensure your team understands and utilizes new workflows</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Monitor and adjust during rollout phase</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-blue-200 p-8 rounded-2xl bg-white hover:shadow-2xl transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-400 text-white font-bold text-xl shadow-lg">4</div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-4">Continuous Improvement - The Turbo for Your Growth</h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Efficiency isn't a one-time project but an ongoing process</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Regularly analyze workflows with you and your team</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Adapt to new challenges and opportunities</span></li>
+                                <li class="flex gap-2 text-gray-600"><span class="text-blue-600 font-bold">•</span><span>Maximize long-term value and ROI</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Benefits Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center justify-center gap-2 mb-4 animate-fade-in">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                <h3 class="text-4xl font-bold">What You Gain with Automation</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 mt-12">
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold">✓</div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Reduce repetitive work</p>
+                        <p class="text-gray-600">and increase productivity</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold">✓</div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Save 10+ hours weekly</p>
+                        <p class="text-gray-600">for your team members</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold">✓</div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Improve efficiency</p>
+                        <p class="text-gray-600">with intelligent workflows and predictive analytics</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold">✓</div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Cut up to 80%</p>
+                        <p class="text-gray-600">of manual work</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold">✓</div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Lower costs by up to 30%</p>
+                        <p class="text-gray-600">through optimized processes</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold">✓</div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Scale operations</p>
+                        <p class="text-gray-600">without proportional cost increases</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+                <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Our Tools & Technologies</span>
+            </h3>
+            <p class="text-lg text-gray-600 mb-16 animate-slide-up max-w-2xl mx-auto">We use these and other proven tools to realize efficient automation solutions.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Asana</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Zapier</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">ClickUp</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">GitHub</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Airtable</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Slack</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Gemini</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Make</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Microsoft</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">OpenAI</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Pipedrive</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">lexoffice</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Notion</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Trello</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Monday.com</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">HubSpot</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Salesforce</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Jira</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Google Workspace</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Dropbox</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Zoom</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Stripe</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Mailchimp</p></div>
+                <div class="p-6 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-xl"><p class="text-sm font-bold">Shopify</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4 text-center animate-fade-in">Our Packages</h3>
+            <p class="text-lg text-gray-600 text-center mb-16 animate-slide-up">Choose the right solution for your business</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 flex flex-col h-full rounded-2xl bg-white border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all">
+                    <h4 class="text-2xl font-bold mb-2">Starter</h4>
+                    <p class="mb-6 text-sm text-gray-600">Optimize One Business Area</p>
+                    <ul class="space-y-3 mb-8 flex-1 text-sm">
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">For companies that want to automate a specific area</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Perfect for automating Sales, HR, Finance, or IT processes</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Analysis & automation of one business area</span>
+                        </li>
+                    </ul>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="w-full rounded-xl py-6 text-base font-bold bg-blue-600 text-white hover:shadow-xl transition-all text-center block">Get Started</a>
+                </div>
+                <div class="p-8 flex flex-col h-full rounded-2xl bg-gradient-to-br from-blue-600 via-blue-600 to-white text-white border-0 shadow-2xl scale-105">
+                    <div class="mb-4">
+                        <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">⭐ MOST POPULAR</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Growth</h4>
+                    <p class="mb-6 text-sm text-white/80">Scalable Automation for Multiple Departments</p>
+                    <ul class="space-y-3 mb-8 flex-1 text-sm">
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-white/90">For companies aiming to automate several departments</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-white/90">Automate Sales, HR, Finance & Operations seamlessly</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-white/90">Dedicated consultant & tailored strategy</span>
+                        </li>
+                    </ul>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="w-full rounded-xl py-6 text-base font-bold bg-white text-gray-900 hover:bg-gray-100 hover:shadow-xl transition-all text-center block">Get Started</a>
+                </div>
+                <div class="p-8 flex flex-col h-full rounded-2xl bg-white border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all">
+                    <h4 class="text-2xl font-bold mb-2">Enterprise</h4>
+                    <p class="mb-6 text-sm text-gray-600">Custom Automation, Integrations & Software</p>
+                    <ul class="space-y-3 mb-8 flex-1 text-sm">
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">For enterprises needing highly customized solutions</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Fully tailored process automation</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <svg class="w-4 h-4 flex-shrink-0 mt-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Dedicated support team</span>
+                        </li>
+                    </ul>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="w-full rounded-xl py-6 text-base font-bold bg-blue-600 text-white hover:shadow-xl transition-all text-center block">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question CTA 3 -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="rounded-3xl border border-gray-200 bg-white px-6 py-10 sm:px-10 sm:py-12 shadow-lg">
+                <div class="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Where are hidden inefficiencies costing you money right now?</h3>
+                    <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="bg-blue-600 text-white rounded-full px-8 py-6 text-base font-bold hover:bg-blue-700 transition-all inline-flex items-center gap-3">
+                        Book Your Free Consultation
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4 text-center animate-fade-in">Frequently Asked Questions</h3>
+            <p class="text-lg text-gray-600 text-center mb-12 animate-slide-up">Everything you need to know</p>
+            <div class="space-y-4">
+                <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-white hover:border-blue-500 transition-all hover:shadow-xl">
+                    <div class="px-6 py-5">
+                        <p class="font-bold">Is the consultation really free?</p>
+                        <p class="text-gray-600 mt-3">Yes, our initial 30-minute consultation is completely free. We analyze your current processes and show you where automation can create the most impact for your business.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-white hover:border-blue-500 transition-all hover:shadow-xl">
+                    <div class="px-6 py-5">
+                        <p class="font-bold">How quickly will I see results?</p>
+                        <p class="text-gray-600 mt-3">We aim to deliver first measurable results within 30 days. The timeline depends on your specific processes and complexity, but our proven methodology ensures rapid implementation and value delivery.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-white hover:border-blue-500 transition-all hover:shadow-xl">
+                    <div class="px-6 py-5">
+                        <p class="font-bold">What does working with you cost?</p>
+                        <p class="text-gray-600 mt-3">Pricing varies based on the scope of automation needed. Our packages range from Starter (single department) to Enterprise (custom solutions). We provide transparent pricing during your consultation.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-white hover:border-blue-500 transition-all hover:shadow-xl">
+                    <div class="px-6 py-5">
+                        <p class="font-bold">Can existing data be transferred to new systems?</p>
+                        <p class="text-gray-600 mt-3">Absolutely. We handle data migration carefully and securely. Our integration process ensures your existing data is transferred accurately to new automation systems without loss or downtime.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-white hover:border-blue-500 transition-all hover:shadow-xl">
+                    <div class="px-6 py-5">
+                        <p class="font-bold">From what company size is process automation worthwhile?</p>
+                        <p class="text-gray-600 mt-3">Process automation benefits companies of all sizes, from small businesses to enterprises. Even small companies can save significant time and costs by automating just one department.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-white hover:border-blue-500 transition-all hover:shadow-xl">
+                    <div class="px-6 py-5">
+                        <p class="font-bold">When should I engage an external automation partner?</p>
+                        <p class="text-gray-600 mt-3">Consider working with us when you notice inefficient manual processes, high operational costs, or growth limitations due to staffing constraints. Our consultation will help identify the best opportunities for your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-gray-50 to-white overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h3 class="text-5xl md:text-6xl font-extrabold mb-8 leading-tight animate-fade-in">Ready to Transform Your Business?</h3>
+            <p class="text-xl md:text-2xl mb-12 text-gray-700 leading-relaxed animate-slide-up">Book your free consultation today and discover how automation can revolutionize your operations</p>
+            <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" class="bg-blue-600 text-white rounded-full px-10 py-6 text-lg font-bold hover:bg-blue-700 transition-all hover:shadow-2xl inline-flex items-center gap-3 animate-slide-up">
+                Book Free Consultation Now
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">
+                        <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">AI</span>
+                        <span>WorldWideWorkforce</span>
+                    </h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Intelligent automation solutions for businesses ready to transform their operations and scale efficiently.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <p class="font-semibold mb-1">Headquarters</p>
+                                <p class="text-gray-600 text-sm">Austria & Poland</p>
+                                <p class="text-gray-500 text-xs">Rynek Główny 28, 31-010 Krakow</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <p class="font-semibold mb-1">Contact</p>
+                                <a href="tel:+4367762069472" class="text-gray-600 hover:text-blue-600 transition-colors text-sm">+43 677 620 69 472</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <p class="font-semibold mb-1">Email</p>
+                                <a href="mailto:admin@aiworldwideworkforce.com" class="text-gray-600 hover:text-blue-600 transition-colors text-sm">admin@aiworldwideworkforce.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        <h3 class="text-lg font-semibold">Company</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="pb-3 border-b border-gray-200">
+                            <p class="text-xs text-gray-500 mb-1">Legal Name</p>
+                            <p class="text-sm font-medium">AIWorldWideWorkforce</p>
+                        </div>
+                        <div class="pb-3 border-b border-gray-200">
+                            <p class="text-xs text-gray-500 mb-1">Registration</p>
+                            <p class="text-sm font-medium">0001194589</p>
+                        </div>
+                        <div class="pb-3 border-b border-gray-200">
+                            <p class="text-xs text-gray-500 mb-1">VAT ID</p>
+                            <p class="text-sm font-medium">PL 6762702873</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Management</p>
+                            <p class="text-sm font-medium">Gigel Nerghes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
