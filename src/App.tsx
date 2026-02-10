@@ -11,16 +11,25 @@ import { PackagesSection } from '@/components/packages'
 import { FAQSection } from '@/components/faq'
 import { CTASection, QuestionCTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false)
+
   useEffect(() => {
+    const checkMobile = () => {
+      const width = window.innerWidth || document.documentElement.clientWidth
+      setIsMobile(width <= 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
     if (window.self !== window.top) {
       document.documentElement.classList.add('iframe-mode')
-      document.body.style.width = '100%'
-      document.documentElement.style.width = '100%'
-      window.dispatchEvent(new Event('resize'))
     }
+    
+    return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
   return (
