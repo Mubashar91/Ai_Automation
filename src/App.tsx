@@ -15,23 +15,9 @@ import { useEffect } from 'react'
 
 function App() {
   useEffect(() => {
-    const checkMobile = () => {
-      const width = window.innerWidth || document.documentElement.clientWidth
-      if (width <= 768) {
-        document.body.classList.add('mobile-view')
-      } else {
-        document.body.classList.remove('mobile-view')
-      }
-    }
-    
-    checkMobile()
-    window.addEventListener('resize', checkMobile)
-    
     if (window.self !== window.top) {
       document.documentElement.classList.add('iframe-mode')
     }
-    
-    return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
   return (
