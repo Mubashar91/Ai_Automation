@@ -1,12 +1,15 @@
 {
-  "installCommand": "pnpm install --no-frozen-lockfile",
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
+          "key": "X-Frame-Options",
+          "value": "ALLOW-FROM https://framer.com"
+        },
+        {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors *"
+          "value": "frame-ancestors https://framer.com https://*.framer.com"
         }
       ]
     }
