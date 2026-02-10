@@ -26,16 +26,18 @@ export function QuestionCTA({
             </h3>
 
             <Button
-              asChild
+              onClick={() => window.open(
+                "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+                "_blank",
+                "noopener,noreferrer"
+              )}
               className="group bg-primary text-primary-foreground rounded-full px-8 py-6 text-base font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] inline-flex items-center gap-3 relative overflow-hidden"
             >
-              <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-                <span className="relative z-10 flex items-center gap-3">
-                  {buttonText}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </a>
+              <span className="relative z-10 flex items-center gap-3">
+                {buttonText}
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </Button>
           </div>
         </div>
@@ -64,17 +66,19 @@ export function CTASection() {
         </p>
 
         <Button
-          asChild
+          onClick={() => window.open(
+            "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+            "_blank",
+            "noopener,noreferrer"
+          )}
           className="group bg-primary text-primary-foreground rounded-full px-10 py-6 text-lg font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-flex items-center gap-3 animate-slide-up relative overflow-hidden"
           style={{ animationDelay: '0.2s' }}
         >
-          <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-            <span className="relative z-10 flex items-center gap-3">
-              {t.cta.button}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          </a>
+          <span className="relative z-10 flex items-center gap-3">
+            {t.cta.button}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+          </span>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </Button>
       </div>
     </section>

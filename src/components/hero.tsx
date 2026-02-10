@@ -42,15 +42,17 @@ export function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button
-            asChild
+            onClick={() => window.open(
+              "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+              "_blank",
+              "noopener,noreferrer"
+            )}
             className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-9 py-6 text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
           >
-            <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-              <span className="flex items-center gap-2">
-                {t.hero.button1}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </a>
+            <span className="flex items-center gap-2">
+              {t.hero.button1}
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </span>
           </Button>
           <Button
             variant="outline"
