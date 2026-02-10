@@ -15,14 +15,8 @@ import { Footer } from '@/components/footer'
 function App() {
   return (
     <Providers>
-      <div style={{
-        width: '100%',
-        maxWidth: '100%',
-        margin: '0 auto',
-        overflowX: 'hidden',
-        minHeight: '100vh'
-      }}>
-        <main className="bg-background transition-colors duration-300">
+      <div className="w-full max-w-full overflow-x-hidden min-h-screen">
+        <main className="bg-background transition-colors duration-300 w-full">
           <Header />
           <HeroSection />
       
