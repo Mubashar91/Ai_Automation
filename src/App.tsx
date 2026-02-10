@@ -11,15 +11,17 @@ import { PackagesSection } from '@/components/packages'
 import { FAQSection } from '@/components/faq'
 import { CTASection, QuestionCTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false)
-
   useEffect(() => {
     const checkMobile = () => {
       const width = window.innerWidth || document.documentElement.clientWidth
-      setIsMobile(width <= 768)
+      if (width <= 768) {
+        document.body.classList.add('mobile-view')
+      } else {
+        document.body.classList.remove('mobile-view')
+      }
     }
     
     checkMobile()
