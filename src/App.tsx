@@ -15,9 +15,16 @@ import { Footer } from '@/components/footer'
 function App() {
   return (
     <Providers>
-      <main className="bg-background transition-colors duration-300">
-        <Header />
-        <HeroSection />
+      <div style={{
+        width: '100%',
+        maxWidth: '100%',
+        margin: '0 auto',
+        overflowX: 'hidden',
+        minHeight: '100vh'
+      }}>
+        <main className="bg-background transition-colors duration-300">
+          <Header />
+          <HeroSection />
       
         <QuestionCTA question="Find out how you can cut costs?" />
         <BenefitsSection />
@@ -30,9 +37,10 @@ function App() {
         <PackagesSection />
         <QuestionCTA question="Where are hidden inefficiencies costing you money right now?" />
         <FAQSection />
-        <CTASection />
-        <Footer />
-      </main>
+          <CTASection />
+          <Footer />
+        </main>
+      </div>
     </Providers>
   )
 }
