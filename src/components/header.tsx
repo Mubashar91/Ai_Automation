@@ -93,12 +93,14 @@ export function Header() {
             </div>
 
             <Button
-              asChild
+              onClick={() => window.open(
+                "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+                "_blank",
+                "noopener,noreferrer"
+              )}
               className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105"
             >
-              <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-                {t.nav.bookConsultation}
-              </a>
+              {t.nav.bookConsultation}
             </Button>
           </nav>
 
@@ -167,12 +169,14 @@ export function Header() {
 
             <div className="px-4 pt-2">
               <Button
-                asChild
+                onClick={() => window.open(
+                  "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+                  "_blank",
+                  "noopener,noreferrer"
+                )}
                 className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
               >
-                <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-                  {t.nav.bookConsultation}
-                </a>
+                {t.nav.bookConsultation}
               </Button>
             </div>
           </nav>
