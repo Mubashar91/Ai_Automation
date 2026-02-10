@@ -7,16 +7,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <title>My Project</title>
-    <script>     
-      (function() {
-        if (window.self !== window.top) {
-          document.documentElement.classList.add('iframe-mode');
-          var style = document.createElement('style');
-          style.textContent = '@media (max-width: 768px) { .md\\:hidden { display: block !important; } .md\\:flex { display: none !important; } }';
-          document.head.appendChild(style);
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>

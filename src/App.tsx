@@ -11,15 +11,8 @@ import { PackagesSection } from '@/components/packages'
 import { FAQSection } from '@/components/faq'
 import { CTASection, QuestionCTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
-import { useEffect } from 'react'
 
 function App() {
-  useEffect(() => {
-    if (window.self !== window.top) {
-      document.documentElement.classList.add('iframe-mode')
-    }
-  }, [])
-
   return (
     <Providers>
       <div className="w-full max-w-full overflow-x-hidden min-h-screen">
