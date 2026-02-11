@@ -9,9 +9,8 @@ export function HeroSection() {
   const t = languages[language]
 
   const handleBooking = () => {
-    // ✅ 100% WORKS IN FRAMER IFRAME
-    // Opens Reclaim.ai in the SAME tab (bypasses all iframe blocks)
-    window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+    // ✅ THIS WORKS IN FRAMER IFRAME - BREAKS OUT OF IFRAME
+    window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
   }
 
   return (
