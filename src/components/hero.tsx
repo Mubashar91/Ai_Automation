@@ -9,7 +9,7 @@ export function HeroSection() {
   const t = languages[language]
 
   return (
-    <section className="relative pt-20 pb-8 sm:pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden flex items-center">
+    <section className="relative pt-20 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -25,29 +25,29 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl"></div>
       </div>
       
-      <div className="max-w-5xl mx-auto text-center relative z-10">
-        <div className="inline-block mb-3 sm:mb-8 animate-bounce-slow">
-          <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-sm font-semibold text-foreground shadow-lg shadow-foreground/5">
+      <div className="max-w-5xl mx-auto text-center relative z-10 py-6 sm:py-12">
+        <div className="inline-block mb-2 sm:mb-6">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-5 sm:py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-xs sm:text-sm font-semibold text-foreground shadow-lg shadow-foreground/5">
             <span className="inline-flex h-2 w-2 rounded-full bg-primary" />
             Enterprise-Grade AI Automation
           </span>
         </div>
-        <h2 className="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-3 sm:mb-6 text-balance leading-[1.05] animate-fade-in tracking-tight">
+        <h2 className="text-2xl sm:text-5xl md:text-7xl font-extrabold mb-2 sm:mb-6 text-balance leading-tight sm:leading-[1.05] tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
         </h2>
-        <p className="text-sm sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-4 sm:mb-12 max-w-2xl mx-auto text-balance leading-relaxed animate-slide-up font-light" style={{ animationDelay: '0.1s' }}>
+        <p className="text-xs sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-3 sm:mb-12 max-w-2xl mx-auto text-balance leading-snug sm:leading-relaxed font-light">
           {t.hero.description}
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
           <Button
             onClick={() => window.open(
               "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
               "_blank",
               "noopener,noreferrer"
             )}
-            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 sm:px-9 py-4 sm:py-6 text-sm sm:text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
+            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 sm:px-9 py-3 sm:py-6 text-xs sm:text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
           >
             <span className="flex items-center gap-2">
               {t.hero.button1}
@@ -56,7 +56,7 @@ export function HeroSection() {
           </Button>
           <Button
             variant="outline"
-            className="group rounded-full px-6 sm:px-9 py-4 sm:py-6 text-sm sm:text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
+            className="group rounded-full px-5 sm:px-9 py-3 sm:py-6 text-xs sm:text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
             asChild
           >
             <a href="#benefits">

@@ -43,7 +43,7 @@ export function PillarsSection() {
           SaaS. Workflows. AI. — How to make your company efficient, scalable, and future-proof.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <div
               key={index}
