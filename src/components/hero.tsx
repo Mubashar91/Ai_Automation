@@ -44,8 +44,7 @@ export function HeroSection() {
           <Button
             className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-9 py-6 text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
             onClick={() => {
-              // Use redirect service to bypass iframe block
-              window.location.href = "https://corsproxy.io/?" + encodeURIComponent("https://app.reclaim.ai/m/gigi-business/process--automation-consultation");
+              window.location.href = "/redirect.html";
             }}
           >
             <span className="flex items-center gap-2">
