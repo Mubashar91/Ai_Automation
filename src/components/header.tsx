@@ -97,7 +97,7 @@ export function Header() {
               onClick={() => {
                 window.top!.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
               }}
-              className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105"
+              className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 relative z-50 cursor-pointer"
             >
               {t.nav.bookConsultation}
             </Button>
