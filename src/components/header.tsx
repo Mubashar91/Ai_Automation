@@ -94,12 +94,16 @@ export function Header() {
             </div>
 
             <Button
-              asChild
-              className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105"
+              onClick={() => {
+                if (window.parent !== window) {
+                  window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                } else {
+                  window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                }
+              }}
+              className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 cursor-pointer"
             >
-              <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" target="_parent">
-                {t.nav.bookConsultation}
-              </a>
+              {t.nav.bookConsultation}
             </Button>
           </nav>
 
@@ -168,12 +172,16 @@ export function Header() {
 
             <div className="px-4 pt-2">
               <Button
-                asChild
-                className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
+                onClick={() => {
+                  if (window.parent !== window) {
+                    window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                  } else {
+                    window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                  }
+                }}
+                className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors cursor-pointer"
               >
-                <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" target="_parent">
-                  {t.nav.bookConsultation}
-                </a>
+                {t.nav.bookConsultation}
               </Button>
             </div>
           </nav>
