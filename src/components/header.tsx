@@ -97,7 +97,7 @@ export function Header() {
               asChild
               className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105"
             >
-              <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
+              <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" target="_blank" rel="noopener noreferrer">
                 {t.nav.bookConsultation}
               </a>
             </Button>
@@ -171,7 +171,7 @@ export function Header() {
                 asChild
                 className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
               >
-                <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
+                <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" target="_blank" rel="noopener noreferrer">
                   {t.nav.bookConsultation}
                 </a>
               </Button>
