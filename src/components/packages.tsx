@@ -131,7 +131,7 @@ export function PackagesSection() {
 
               <Button
                 onClick={() => {
-                  window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                  if (window.top) window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
                 }}
                 className={`w-full rounded-xl py-6 text-base font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
