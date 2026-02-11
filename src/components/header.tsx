@@ -93,11 +93,7 @@ export function Header() {
             </div>
 
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
-              }}
+              href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 relative z-50 cursor-pointer font-medium h-10"
             >
               {t.nav.bookConsultation}
@@ -169,11 +165,7 @@ export function Header() {
 
             <div className="px-4 pt-2">
               <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
-                }}
+                href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
                 className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium h-10"
               >
                 {t.nav.bookConsultation}
