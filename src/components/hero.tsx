@@ -9,7 +9,7 @@ export function HeroSection() {
   const t = languages[language]
 
   return (
-    <section className="relative pt-20 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden min-h-[70vh] sm:min-h-screen flex items-center">
+    <section className="relative pt-20 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden min-h-[calc(100svh-5rem)] md:min-h-screen flex items-center">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
