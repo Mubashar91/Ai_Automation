@@ -95,7 +95,16 @@ export function Header() {
 
             <Button
               onClick={() => {
-                window.top!.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                const url = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
+                try {
+                  if (window.top && window.top !== window) {
+                    window.top.location.href = url;
+                  } else {
+                    window.location.href = url;
+                  }
+                } catch (e) {
+                  window.location.href = url;
+                }
               }}
               className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 relative z-50 cursor-pointer"
             >
@@ -169,7 +178,16 @@ export function Header() {
             <div className="px-4 pt-2">
               <Button
                 onClick={() => {
-                  window.top!.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                  const url = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
+                  try {
+                    if (window.top && window.top !== window) {
+                      window.top.location.href = url;
+                    } else {
+                      window.location.href = url;
+                    }
+                  } catch (e) {
+                    window.location.href = url;
+                  }
                 }}
                 className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
               >
