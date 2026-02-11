@@ -8,11 +8,6 @@ export function HeroSection() {
   const { language } = useLanguage()
   const t = languages[language]
 
-  const handleBooking = () => {
-    // ✅ THIS WORKS IN FRAMER IFRAME - BREAKS OUT OF IFRAME
-    window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
-  }
-
   return (
     <section className="relative pt-20 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
       {/* Animated background elements */}
