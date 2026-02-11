@@ -92,12 +92,18 @@ export function Header() {
               )}
             </div>
 
-            <a
-              href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+            <button
+              onClick={() => {
+                window.open(
+                  "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
               className="inline-flex items-center justify-center bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 relative z-50 cursor-pointer font-medium h-10"
             >
               {t.nav.bookConsultation}
-            </a>
+            </button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -164,12 +170,18 @@ export function Header() {
             </div>
 
             <div className="px-4 pt-2">
-              <a
-                href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }}
                 className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium h-10"
               >
                 {t.nav.bookConsultation}
-              </a>
+              </button>
             </div>
           </nav>
         )}
