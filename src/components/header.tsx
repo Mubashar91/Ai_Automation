@@ -13,7 +13,8 @@ export function Header() {
 
   const navItems = [
     { label: t.nav.home, href: '#' },
-    { label: t.nav.contact, href: '#footer' },
+    { label: t.nav.about, href: '#about' },
+    { label: t.nav.contact, href: '#contact' },
   ]
 
   return (
@@ -93,14 +94,12 @@ export function Header() {
             </div>
 
             <Button
-              onClick={() => window.open(
-                "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
-                "_blank",
-                "noopener,noreferrer"
-              )}
+              asChild
               className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105"
             >
-              {t.nav.bookConsultation}
+              <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
+                {t.nav.bookConsultation}
+              </a>
             </Button>
           </nav>
 
@@ -169,14 +168,12 @@ export function Header() {
 
             <div className="px-4 pt-2">
               <Button
-                onClick={() => window.open(
-                  "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
-                  "_blank",
-                  "noopener,noreferrer"
-                )}
+                asChild
                 className="w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
               >
-                {t.nav.bookConsultation}
+                <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
+                  {t.nav.bookConsultation}
+                </a>
               </Button>
             </div>
           </nav>
