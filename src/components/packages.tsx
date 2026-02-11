@@ -130,11 +130,13 @@ export function PackagesSection() {
               </ul>
 
               <Button
-                onClick={() => window.open(
-                  "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
-                  "_blank",
-                  "noopener,noreferrer"
-                )}
+                onClick={() => {
+                  if (window.parent !== window) {
+                    window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                  } else {
+                    window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                  }
+                }}
                 className={`w-full rounded-xl py-6 text-base font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
                     ? 'bg-background text-foreground hover:bg-background/95 hover:shadow-xl hover:scale-105'

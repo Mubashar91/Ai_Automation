@@ -42,11 +42,13 @@ export function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
           <Button
-            onClick={() => window.open(
-              "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
-              "_blank",
-              "noopener,noreferrer"
-            )}
+            onClick={() => {
+              if (window.parent !== window) {
+                window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+              } else {
+                window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+              }
+            }}
             className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 sm:px-9 py-3 sm:py-6 text-xs sm:text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
           >
             <span className="flex items-center gap-2">
