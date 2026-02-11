@@ -9,7 +9,7 @@ export function HeroSection() {
   const t = languages[language]
 
   return (
-    <section className="relative pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden min-h-screen flex items-center">
+    <section className="relative pt-20 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden min-h-[70vh] sm:min-h-screen flex items-center">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -32,12 +32,12 @@ export function HeroSection() {
             Enterprise-Grade AI Automation
           </span>
         </div>
-        <h2 className="text-5xl md:text-7xl font-extrabold mb-6 text-balance leading-[1.05] animate-fade-in tracking-tight">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-4 sm:mb-6 text-balance leading-[1.05] animate-fade-in tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
         </h2>
-        <p className="text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-12 max-w-2xl mx-auto text-balance leading-relaxed animate-slide-up font-light" style={{ animationDelay: '0.1s' }}>
+        <p className="text-base sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-6 sm:mb-12 max-w-2xl mx-auto text-balance leading-relaxed animate-slide-up font-light" style={{ animationDelay: '0.1s' }}>
           {t.hero.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
