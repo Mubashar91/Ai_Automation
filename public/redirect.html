@@ -2,11 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://app.reclaim.ai/m/gigi-business/process--automation-consultation">
-    <title>Redirecting...</title>
+    <title>Opening Booking Page...</title>
+    <script>
+        // Force open in new window and close this tab
+        window.open("https://app.reclaim.ai/m/gigi-business/process--automation-consultation", "_blank");
+        window.close();
+        // Fallback if window.close() doesn't work
+        setTimeout(function() {
+            document.body.innerHTML = '<div style="font-family: Arial; padding: 40px; text-align: center;"><h2>Booking page opened in new tab</h2><p>You can close this tab.</p></div>';
+        }, 100);
+    </script>
 </head>
 <body>
-    <p>Redirecting to booking page...</p>
-    <p>If you are not redirected, <a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation">click here</a>.</p>
+    <div style="font-family: Arial; padding: 40px; text-align: center;">
+        <p>Opening booking page...</p>
+        <p><a href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation" target="_blank">Click here if it doesn't open automatically</a></p>
+    </div>
 </body>
 </html>
