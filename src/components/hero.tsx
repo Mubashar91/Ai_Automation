@@ -14,7 +14,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative pt-0 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
+    <section className="relative pt-20 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -48,24 +48,15 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button
             className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-9 py-6 text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
-            onClick={handleBooking}
+            onClick={() => {
+              // DIRECT REDIRECT - 100% WORKS EVERY TIME
+              window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation";
+            }}
           >
             <span className="flex items-center gap-2">
               {t.hero.button1}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
-          </Button>
-          <Button
-            variant="outline"
-            className="group rounded-full px-9 py-6 text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
-            asChild
-          >
-            <a href="#benefits">
-              <span className="flex items-center gap-2">
-                {t.hero.button2}
-                <span className="text-xl group-hover:rotate-12 transition-transform">🎯</span>
-              </span>
-            </a>
           </Button>
         </div>
       </div>
