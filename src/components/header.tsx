@@ -93,18 +93,13 @@ export function Header() {
               )}
             </div>
 
-            <button
-              onClick={() => {
-                if (window.parent !== window) {
-                  window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-                } else {
-                  window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-                }
-              }}
-              className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 cursor-pointer font-medium"
+            <a
+              href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+              target="_parent"
+              className="inline-flex items-center justify-center bg-primary text-primary-foreground rounded-full px-6 py-2 text-sm hover:shadow-lg hover:shadow-primary/30 transition-all hover:scale-105 cursor-pointer font-medium"
             >
               {t.nav.bookConsultation}
-            </button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -171,18 +166,13 @@ export function Header() {
             </div>
 
             <div className="px-4 pt-2">
-              <button
-                onClick={() => {
-                  if (window.parent !== window) {
-                    window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-                  } else {
-                    window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-                  }
-                }}
-                className="w-full bg-primary text-primary-foreground rounded-full py-3 hover:bg-primary/90 transition-colors cursor-pointer font-medium"
+              <a
+                href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+                target="_parent"
+                className="block w-full text-center bg-primary text-primary-foreground rounded-full py-3 hover:bg-primary/90 transition-colors cursor-pointer font-medium"
               >
                 {t.nav.bookConsultation}
-              </button>
+              </a>
             </div>
           </nav>
         )}
