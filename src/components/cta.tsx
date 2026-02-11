@@ -27,11 +27,7 @@ export function QuestionCTA({
 
             <Button
               onClick={() => {
-                if (window.parent !== window) {
-                  window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-                } else {
-                  window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-                }
+                window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
               }}
               className="group bg-primary text-primary-foreground rounded-full px-8 py-6 text-base font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] inline-flex items-center gap-3 relative overflow-hidden"
             >
@@ -69,11 +65,7 @@ export function CTASection() {
 
         <Button
           onClick={() => {
-            if (window.parent !== window) {
-              window.parent.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-            } else {
-              window.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-            }
+            window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
           }}
           className="group bg-primary text-primary-foreground rounded-full px-10 py-6 text-lg font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-flex items-center gap-3 animate-slide-up relative overflow-hidden"
           style={{ animationDelay: '0.2s' }}
