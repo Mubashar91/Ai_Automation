@@ -52,7 +52,7 @@ export function HeroSection() {
     {t.hero.button1}
     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
   </span>
-</Button>
+</Button> 
           <Button
             variant="outline"
             className="group rounded-full px-9 py-6 text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
