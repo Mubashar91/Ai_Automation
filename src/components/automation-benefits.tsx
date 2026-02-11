@@ -68,7 +68,7 @@ export function AutomationBenefitsSection() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <div className="flex flex-col gap-6 mt-12 md:grid md:grid-cols-2">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex gap-4 items-start animate-slide-up" style={{ animationDelay: `${0.1 * index}s` }}>
               <div className="flex-shrink-0">
