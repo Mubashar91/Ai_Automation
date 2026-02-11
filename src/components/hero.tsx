@@ -40,21 +40,23 @@ export function HeroSection() {
         <p className="text-xs sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-3 sm:mb-12 max-w-2xl mx-auto text-balance leading-snug sm:leading-relaxed font-light">
           {t.hero.description}
         </p>
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button
-            onClick={() => {
-              if (window.top) window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-            }}
-            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 sm:px-9 py-3 sm:py-6 text-xs sm:text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
+            asChild
+            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-9 py-6 text-base shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] font-semibold border-0 ring-1 ring-primary/30"
           >
-            <span className="flex items-center gap-2">
-              {t.hero.button1}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </span>
+            <a
+              href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+            >
+              <span className="flex items-center gap-2">
+                {t.hero.button1}
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </a>
           </Button>
           <Button
             variant="outline"
-            className="group rounded-full px-5 sm:px-9 py-3 sm:py-6 text-xs sm:text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
+            className="group rounded-full px-9 py-6 text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
             asChild
           >
             <a href="#benefits">
