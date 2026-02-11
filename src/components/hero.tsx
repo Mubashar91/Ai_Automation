@@ -47,7 +47,7 @@ export function HeroSection() {
           >
             <a
               href="https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
-              target="_blank"
+              target="_top"
               rel="noopener noreferrer"
             >
               <span className="flex items-center gap-2">
