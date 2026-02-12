@@ -83,7 +83,7 @@ export function PackagesSection() {
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-[10%]">
+      <div className="max-w-6xl mx-auto">
         <h3 className="text-6xl sm:text-7xl font-black text-foreground mb-4 text-center animate-fade-in">
           {t.packages.title}
         </h3>
@@ -91,7 +91,7 @@ export function PackagesSection() {
           {t.packages.subtitle}
         </p>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 px-[10%] xl:px-0">
           {packages.map((pkg, idx) => (
             <Card
               key={pkg.name}
