@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-size: 20px;
+  font-size: 22px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -96,24 +96,11 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
   html {
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
 }
 
-/* Reduce root font-size on small screens to improve mobile scaling inside iframes */
-@media (max-width: 640px) {
-  html { font-size: 22px !important; -webkit-text-size-adjust: none !important; -ms-text-size-adjust: none !important; }
-  body { font-size: 22px !important; -webkit-text-size-adjust: none !important; }
-}
 
-/* Force hero title sizing when embedded in constrained containers */
-@layer utilities {
-  .hero-force-size {
-    font-size: clamp(1.8rem, 6vw, 3.75rem) !important;
-    -webkit-text-size-adjust: none !important;
-    text-wrap: balance;
-  }
-}
