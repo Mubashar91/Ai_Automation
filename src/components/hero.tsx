@@ -27,22 +27,22 @@ export function HeroSection() {
       
       <div className="max-w-5xl mx-auto text-center relative z-10 py-4 sm:py-12">
         <div className="inline-block mb-2 sm:mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-sm sm:text-sm font-bold sm:font-semibold text-foreground shadow-lg shadow-foreground/5">
+          <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-base font-semibold text-foreground shadow-lg shadow-foreground/5">
             <span className="inline-flex h-2 w-2 rounded-full bg-primary" />
             Enterprise-Grade AI Automation
           </span>
         </div>
-        <h2 className="text-5xl md:text-7xl font-extrabold mb-4 md:mb-6 text-balance leading-tight tracking-tight">
+        <h2 className="text-6xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
         </h2>
-        <p className="text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-6 md:mb-12 max-w-2xl mx-auto text-balance leading-relaxed font-light">
+        <p className="text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
           {t.hero.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
           <Button
-            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full sm:w-auto px-8 sm:px-9 py-5 sm:py-6 text-lg sm:text-base font-bold sm:font-semibold shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] border-0 ring-1 ring-primary/30"
+            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-9 py-6 text-xl font-bold shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] border-0 ring-1 ring-primary/30"
             asChild
           >
             <a href="#contact">
@@ -54,7 +54,7 @@ export function HeroSection() {
           </Button>
           <Button
             variant="outline"
-            className="group rounded-full w-full sm:w-auto px-8 sm:px-9 py-5 sm:py-6 text-lg sm:text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-bold sm:font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
+            className="group rounded-full px-9 py-6 text-xl border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-bold hover:scale-[1.03] shadow-lg hover:bg-card"
             asChild
           >
             <a href="#benefits">
