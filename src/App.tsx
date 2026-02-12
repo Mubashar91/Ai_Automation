@@ -8,7 +8,7 @@ import { PillarsSection } from '@/components/pillars'
 import { AutomationBenefitsSection } from '@/components/automation-benefits'
 import { ToolsSection } from '@/components/tools'
 // import { PackagesSection } from '@/components/packages'
-// import { FAQSection } from '@/components/faq'
+import { FAQSection } from '@/components/faq'
 // import { CTASection, QuestionCTA } from '@/components/cta'
 // import { Footer } from '@/components/footer'
 
@@ -27,10 +27,11 @@ function App() {
      
         <AutomationBenefitsSection />
          <ToolsSection />
+         <FAQSection />
         {/*
         <PackagesSection />
         <QuestionCTA question="Where are hidden inefficiencies costing you money right now?" />
-        <FAQSection />
+        
           <CTASection />
           <Footer /> */} 
         </main>

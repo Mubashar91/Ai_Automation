@@ -65,10 +65,10 @@ export function FAQSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
-        <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
+        <h3 className="text-5xl md:text-4xl font-bold text-foreground mb-6 text-center animate-fade-in">
           {t.faq.title}
         </h3>
-        <p className="text-lg text-foreground/60 dark:text-foreground/70 text-center mb-12 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <p className="text-xl md:text-lg text-foreground/60 dark:text-foreground/70 text-center mb-12 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
           {t.faq.subtitle}
         </p>
 
@@ -85,7 +85,7 @@ export function FAQSection() {
                 }
                 className="w-full px-6 py-5 flex items-center justify-between hover:bg-gradient-to-r hover:from-primary/5 hover:to-primary/0 transition-all duration-300"
               >
-                <span className="font-bold text-foreground text-left group-hover:text-primary transition-colors">
+                <span className="font-bold text-foreground text-left group-hover:text-primary transition-colors text-xl md:text-base">
                   {item.question}
                 </span>
                 <div className="flex-shrink-0 ml-4">
@@ -99,7 +99,7 @@ export function FAQSection() {
 
               {openIndex === index && (
                 <div className="px-6 py-5 bg-card border-t-2 border-primary/20 dark:border-primary/30 animate-slide-down">
-                  <p className="text-foreground/80 dark:text-foreground/90 leading-relaxed">
+                  <p className="text-foreground/80 dark:text-foreground/90 leading-relaxed text-lg md:text-base">
                     {item.answer}
                   </p>
                 </div>
