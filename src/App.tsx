@@ -13,6 +13,7 @@ import { HeroSection } from '@/components/hero'
 // import { Footer } from '@/components/footer'
 
 function App() {
+  
   return (
     <Providers>
       <div className="w-full max-w-full overflow-x-hidden min-h-screen">
