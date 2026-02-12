@@ -1,7 +1,7 @@
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { HeroSection } from '@/components/hero'
-// import { BenefitsSection } from '@/components/benefits'
+import { BenefitsSection } from '@/components/benefits'
 // import { ChallengesSection } from '@/components/challenges'
 // import { PillarsSection } from '@/components/pillars'
 // import { ProcessSection } from '@/components/process'
@@ -20,9 +20,9 @@ function App() {
         <main className="bg-background transition-colors duration-300 w-full">
           <Header />
           <HeroSection />
-      
+            <BenefitsSection />
         {/* <QuestionCTA question="Find out how you can cut costs?" />
-        <BenefitsSection />
+  
         <ChallengesSection />
         <QuestionCTA question="How can I scale without raising costs?" />
         <PillarsSection />
