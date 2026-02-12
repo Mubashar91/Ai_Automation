@@ -20,7 +20,7 @@ function App() {
           <Header />
           <HeroSection />
       
-        <QuestionCTA question="Find out how you can cut costs?" />
+        {/* <QuestionCTA question="Find out how you can cut costs?" />
         <BenefitsSection />
         <ChallengesSection />
         <QuestionCTA question="How can I scale without raising costs?" />
@@ -32,7 +32,7 @@ function App() {
         <QuestionCTA question="Where are hidden inefficiencies costing you money right now?" />
         <FAQSection />
           <CTASection />
-          <Footer />
+          <Footer /> */}
         </main>
       </div>
     </Providers>
