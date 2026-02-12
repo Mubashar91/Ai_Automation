@@ -113,17 +113,17 @@ export function PackagesSection() {
                 </>
               )}
 
-              <h4 className={`text-2xl font-bold mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <h4 className={`text-3xl font-bold mb-4 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
                 {pkg.name}
               </h4>
-              <p className={`mb-6 text-sm ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
+              <p className={`mb-6 text-lg leading-relaxed ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
                 {pkg.description}
               </p>
 
-              <ul className="space-y-3 mb-8 flex-1 text-sm">
+              <ul className="space-y-4 mb-8 flex-1 text-base">
                 {pkg.features.map((feature, index) => (
                   <li key={index} className="flex gap-3 items-start">
-                    <Check className={`w-4 h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
+                    <Check className={`w-5 h-5 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
                     <span className={pkg.highlighted ? 'text-primary-foreground/90' : 'text-foreground/70'}>{feature}</span>
                   </li>
                 ))}
@@ -137,7 +137,7 @@ export function PackagesSection() {
                     "noopener,noreferrer"
                   );
                 }}
-                className={`w-full rounded-xl py-6 text-base font-bold transition-all duration-300 relative z-10 ${
+                className={`w-full rounded-xl py-6 text-lg font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
                     ? 'bg-background text-foreground hover:bg-background/95 hover:shadow-xl hover:scale-105'
                     : 'bg-primary text-primary-foreground hover:shadow-xl hover:shadow-primary/30 hover:scale-105'
