@@ -33,7 +33,7 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] sm:w-[700px] sm:h-[700px] bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl"></div>
       </div>
       
-      <div className="max-w-5xl mx-auto text-center relative z-10 py-4 sm:py-12">
+      <div className="max-w-5xl mx-auto text-left relative z-10 py-4 sm:py-12">
         <div className="inline-block mb-2 sm:mb-6">
           <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-base font-semibold text-foreground shadow-lg shadow-foreground/5">
             <span className="inline-flex h-2 w-2 rounded-full bg-primary" />
@@ -42,13 +42,11 @@ export function HeroSection() {
         </div>
 
         {/* ✅ FIXED: REMOVED CLAMP, USING RESPONSIVE TAILWIND CLASSES */}
-        <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
-          <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
-            {t.hero.title}
-          </span>
+        <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold mb-6 text-balance leading-tight tracking-tight text-yellow-400">
+          {t.hero.title}
         </h2>
 
-        <p className="text-xl sm:text-2xl md:text-3xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
+        <p className="text-2xl sm:text-3xl md:text-4xl text-white mb-8 max-w-3xl text-balance leading-relaxed font-light">
           {t.hero.description}
         </p>
 
