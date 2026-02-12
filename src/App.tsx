@@ -5,7 +5,7 @@ import { BenefitsSection } from '@/components/benefits'
 import { ChallengesSection } from '@/components/challenges'
 import { PillarsSection } from '@/components/pillars'
 // import { ProcessSection } from '@/components/process'
-// import { AutomationBenefitsSection } from '@/components/automation-benefits'
+import { AutomationBenefitsSection } from '@/components/automation-benefits'
 // import { ToolsSection } from '@/components/tools'
 // import { PackagesSection } from '@/components/packages'
 // import { FAQSection } from '@/components/faq'
@@ -23,19 +23,15 @@ function App() {
             <BenefitsSection />
                <ChallengesSection />
                  <PillarsSection />
-        {/* <QuestionCTA question="Find out how you can cut costs?" />
-  
+       
      
-        <QuestionCTA question="How can I scale without raising costs?" />
-        <PillarsSection />
-        <ProcessSection />
         <AutomationBenefitsSection />
-        <ToolsSection />
+        {/* <ToolsSection />
         <PackagesSection />
         <QuestionCTA question="Where are hidden inefficiencies costing you money right now?" />
         <FAQSection />
           <CTASection />
-          <Footer /> */}
+          <Footer /> */} */}
         </main>
       </div>
     </Providers>
