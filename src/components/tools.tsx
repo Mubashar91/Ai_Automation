@@ -48,7 +48,7 @@ export function ToolsSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/0 transition-all duration-500 rounded-2xl"></div>
               
               <div className="relative z-10 flex items-center justify-center h-full">
-                <p className="text-lg md:text-sm font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                <p className="text-2xl md:text-sm font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                   {tool}
                 </p>
               </div>
