@@ -8,8 +8,13 @@ export function HeroSection() {
   const { language } = useLanguage()
   const t = languages[language]
 
+  const handleBooking = () => {
+    // ✅ BREAKS OUT OF IFRAME - OPENS Reclaim.ai IN SAME TAB
+    window.top.location.href = "https://app.reclaim.ai/m/gigi-business/process--automation-consultation"
+  }
+
   return (
-    <section className="relative pt-16 sm:pt-20 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
+    <section className="relative pt-12 sm:pt-16 md:pt-20 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -32,32 +37,35 @@ export function HeroSection() {
             Enterprise-Grade AI Automation
           </span>
         </div>
-        <h2
-          className="text-4xl sm:text-6xl font-extrabold mb-6 text-balance leading-tight tracking-tight"
-          style={{ fontSize: 'clamp(1.8rem, 6vw, 3.75rem)' }}
-        >
+
+        {/* ✅ FIXED: REMOVED CLAMP, USING RESPONSIVE TAILWIND CLASSES */}
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
         </h2>
-        <p className="text-lg sm:text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
+
+        <p className="text-lg sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
           {t.hero.description}
         </p>
+
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
+          
+          {/* ✅ FIXED: BOOKING BUTTON NOW USES onClick + window.top.location.href */}
           <Button
-            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-9 py-6 text-xl font-bold shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] border-0 ring-1 ring-primary/30"
-            asChild
+            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg sm:text-xl font-bold shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] border-0 ring-1 ring-primary/30"
+            onClick={handleBooking}
           >
-            <a href="#contact">
-              <span className="flex items-center gap-2">
-                {t.hero.button1}
-                <ArrowRight className="w-6 h-6 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </a>
+            <span className="flex items-center gap-2">
+              {t.hero.button1}
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+            </span>
           </Button>
+
+          {/* ✅ SECONDARY BUTTON (unchanged, scrolls to benefits) */}
           <Button
             variant="outline"
-            className="group rounded-full px-9 py-6 text-xl border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-bold hover:scale-[1.03] shadow-lg hover:bg-card"
+            className="group rounded-full px-8 py-6 text-lg sm:text-xl border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-bold hover:scale-[1.03] shadow-lg hover:bg-card"
             asChild
           >
             <a href="#benefits">
