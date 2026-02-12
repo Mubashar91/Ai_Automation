@@ -91,11 +91,11 @@ export function PackagesSection() {
           {t.packages.subtitle}
         </p>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 place-items-center xl:place-items-stretch">
           {packages.map((pkg, idx) => (
             <Card
               key={pkg.name}
-              className={`p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group ${
+              className={`p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full max-w-md xl:max-w-none ${
                 pkg.highlighted
                   ? 'bg-gradient-to-br from-primary via-primary to-card text-primary-foreground border-0 shadow-2xl shadow-primary/20 scale-105'
                   : 'bg-card border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:scale-105'
