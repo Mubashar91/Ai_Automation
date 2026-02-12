@@ -113,14 +113,14 @@ export function PackagesSection() {
                 </>
               )}
 
-              <h4 className={`text-4xl sm:text-2xl font-bold mb-4 sm:mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <h4 className={`text-3xl sm:text-2xl font-bold mb-4 sm:mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
                 {pkg.name}
               </h4>
-              <p className={`mb-8 text-xl sm:text-sm leading-relaxed ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
+              <p className={`mb-8 text-lg sm:text-sm leading-relaxed ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
                 {pkg.description}
               </p>
 
-              <ul className="space-y-4 mb-10 flex-1 text-lg sm:text-sm">
+              <ul className="space-y-4 mb-10 flex-1 text-base sm:text-sm">
                 {pkg.features.map((feature, index) => (
                   <li key={index} className="flex gap-3 items-start">
                     <Check className={`w-6 h-6 sm:w-4 sm:h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
