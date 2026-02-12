@@ -15,7 +15,7 @@ import { BenefitsSection } from '@/components/benefits'
 function App() {
   
   return (
-    <Providers> 
+    <Providers>
       <div className="w-full max-w-full overflow-x-hidden min-h-screen">
         <main className="bg-background transition-colors duration-300 w-full">
           <Header />
