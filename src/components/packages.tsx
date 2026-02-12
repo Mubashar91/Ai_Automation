@@ -95,7 +95,7 @@ export function PackagesSection() {
           {packages.map((pkg, idx) => (
             <Card
               key={pkg.name}
-              className={`p-6 sm:p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full max-w-[26rem] sm:max-w-full xl:max-w-none ${
+              className={`p-6 sm:p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full max-w-[22rem] sm:max-w-[24rem] xl:max-w-none ${
                 pkg.highlighted
                   ? 'bg-gradient-to-br from-primary via-primary to-card text-primary-foreground border-0 shadow-2xl shadow-primary/20 scale-105'
                   : 'bg-card border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:scale-105'
@@ -105,7 +105,7 @@ export function PackagesSection() {
               {pkg.highlighted && (
                 <>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  <div className="mb-4 relative z-10">
+                  <div className="mb-4 relative z-10 text-center">
                     <span className="inline-block px-4 py-1.5 bg-background/20 backdrop-blur-sm text-primary-foreground text-base font-black rounded-full shadow-lg">
                       ⭐ {language === 'en' ? 'MOST POPULAR' : 'AM BELIEBTESTEN'}
                     </span>
@@ -113,16 +113,16 @@ export function PackagesSection() {
                 </>
               )}
 
-              <h4 className={`text-4xl sm:text-5xl font-black mb-3 sm:mb-4 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <h4 className={`text-4xl sm:text-5xl font-black mb-3 sm:mb-4 text-center ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
                 {pkg.name}
               </h4>
-              <p className={`mb-6 sm:mb-8 text-xl sm:text-2xl font-semibold leading-relaxed ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
+              <p className={`mb-6 sm:mb-8 text-xl sm:text-2xl font-semibold leading-relaxed text-center ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
                 {pkg.description}
               </p>
 
               <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-1 text-lg sm:text-xl font-semibold">
                 {pkg.features.map((feature, index) => (
-                  <li key={index} className="flex gap-3 items-start">
+                  <li key={index} className="flex gap-3 items-start justify-center text-center">
                     <Check className={`w-7 h-7 sm:w-7 sm:h-7 flex-shrink-0 mt-1 stroke-[3] ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
                     <span className={pkg.highlighted ? 'text-primary-foreground/90' : 'text-foreground/70'}>{feature}</span>
                   </li>
