@@ -137,7 +137,7 @@ export function PackagesSection() {
                     "noopener,noreferrer"
                   );
                 }}
-                className={`w-full rounded-xl py-7 text-xl sm:text-base font-bold transition-all duration-300 relative z-10 ${
+                className={`w-full rounded-xl py-7 text-lg sm:text-base font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
                     ? 'bg-background text-foreground hover:bg-background/95 hover:shadow-xl hover:scale-105'
                     : 'bg-primary text-primary-foreground hover:shadow-xl hover:shadow-primary/30 hover:scale-105'
