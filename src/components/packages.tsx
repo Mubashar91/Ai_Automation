@@ -84,10 +84,10 @@ export function PackagesSection() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
+        <h3 className="text-5xl sm:text-6xl font-bold text-foreground mb-4 text-center animate-fade-in">
           {t.packages.title}
         </h3>
-        <p className="text-lg text-foreground/60 dark:text-foreground/70 text-center mb-16 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <p className="text-xl sm:text-2xl text-foreground/60 dark:text-foreground/70 text-center mb-16 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
           {t.packages.subtitle}
         </p>
 
@@ -106,24 +106,24 @@ export function PackagesSection() {
                 <>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <div className="mb-4 relative z-10">
-                    <span className="inline-block px-4 py-1.5 bg-background/20 backdrop-blur-sm text-primary-foreground text-xs font-bold rounded-full shadow-lg">
+                    <span className="inline-block px-4 py-1.5 bg-background/20 backdrop-blur-sm text-primary-foreground text-sm font-bold rounded-full shadow-lg">
                       ⭐ {language === 'en' ? 'MOST POPULAR' : 'AM BELIEBTESTEN'}
                     </span>
                   </div>
                 </>
               )}
 
-              <h4 className={`text-2xl sm:text-2xl font-bold mb-3 sm:mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <h4 className={`text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
                 {pkg.name}
               </h4>
-              <p className={`mb-6 sm:mb-8 text-base sm:text-sm leading-relaxed ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
+              <p className={`mb-6 sm:mb-8 text-lg sm:text-xl leading-relaxed ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
                 {pkg.description}
               </p>
 
-              <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-1 text-sm sm:text-sm">
+              <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-1 text-base sm:text-lg">
                 {pkg.features.map((feature, index) => (
                   <li key={index} className="flex gap-3 items-start">
-                    <Check className={`w-5 h-5 sm:w-4 sm:h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
+                    <Check className={`w-6 h-6 sm:w-6 sm:h-6 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
                     <span className={pkg.highlighted ? 'text-primary-foreground/90' : 'text-foreground/70'}>{feature}</span>
                   </li>
                 ))}
@@ -137,7 +137,7 @@ export function PackagesSection() {
                     "noopener,noreferrer"
                   );
                 }}
-                className={`w-full rounded-xl py-5 sm:py-7 text-base sm:text-base font-bold transition-all duration-300 relative z-10 ${
+                className={`w-full rounded-xl py-5 sm:py-7 text-lg sm:text-xl font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
                     ? 'bg-background text-foreground hover:bg-background/95 hover:shadow-xl hover:scale-105'
                     : 'bg-primary text-primary-foreground hover:shadow-xl hover:shadow-primary/30 hover:scale-105'
