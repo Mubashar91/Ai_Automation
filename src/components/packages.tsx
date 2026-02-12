@@ -83,7 +83,7 @@ export function PackagesSection() {
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto px-[10%]">
         <h3 className="text-6xl sm:text-7xl font-black text-foreground mb-4 text-center animate-fade-in">
           {t.packages.title}
         </h3>
@@ -91,11 +91,11 @@ export function PackagesSection() {
           {t.packages.subtitle}
         </p>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 place-items-center xl:place-items-stretch">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
           {packages.map((pkg, idx) => (
             <Card
               key={pkg.name}
-              className={`p-6 sm:p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full max-w-[22rem] sm:max-w-[24rem] xl:max-w-none ${
+              className={`p-6 sm:p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full ${
                 pkg.highlighted
                   ? 'bg-gradient-to-br from-primary via-primary to-card text-primary-foreground border-0 shadow-2xl shadow-primary/20 scale-105'
                   : 'bg-card border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:scale-105'
