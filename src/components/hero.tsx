@@ -46,7 +46,7 @@ export function HeroSection() {
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
-        </h2> 
+         </h2> 
 
         <p className="text-lg sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
           {t.hero.description}
