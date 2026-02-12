@@ -95,7 +95,7 @@ export function PackagesSection() {
           {packages.map((pkg, idx) => (
             <Card
               key={pkg.name}
-              className={`p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full max-w-md xl:max-w-none ${
+              className={`p-6 sm:p-8 flex flex-col h-full rounded-2xl transition-all duration-500 animate-slide-up relative overflow-hidden group w-full max-w-2xl xl:max-w-none ${
                 pkg.highlighted
                   ? 'bg-gradient-to-br from-primary via-primary to-card text-primary-foreground border-0 shadow-2xl shadow-primary/20 scale-105'
                   : 'bg-card border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:scale-105'
@@ -113,17 +113,17 @@ export function PackagesSection() {
                 </>
               )}
 
-              <h4 className={`text-2xl font-bold mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <h4 className={`text-3xl sm:text-2xl font-bold mb-3 sm:mb-2 ${pkg.highlighted ? 'text-primary-foreground' : 'text-foreground'}`}>
                 {pkg.name}
               </h4>
-              <p className={`mb-6 text-sm ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
+              <p className={`mb-6 text-base sm:text-sm ${pkg.highlighted ? 'text-primary-foreground/80' : 'text-foreground/60'}`}>
                 {pkg.description}
               </p>
 
-              <ul className="space-y-3 mb-8 flex-1 text-sm">
+              <ul className="space-y-3 mb-8 flex-1 text-base sm:text-sm">
                 {pkg.features.map((feature, index) => (
                   <li key={index} className="flex gap-3 items-start">
-                    <Check className={`w-4 h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
+                    <Check className={`w-5 h-5 sm:w-4 sm:h-4 flex-shrink-0 mt-1 ${pkg.highlighted ? 'text-primary-foreground' : 'text-primary'}`} />
                     <span className={pkg.highlighted ? 'text-primary-foreground/90' : 'text-foreground/70'}>{feature}</span>
                   </li>
                 ))}
@@ -137,7 +137,7 @@ export function PackagesSection() {
                     "noopener,noreferrer"
                   );
                 }}
-                className={`w-full rounded-xl py-6 text-base font-bold transition-all duration-300 relative z-10 ${
+                className={`w-full rounded-xl py-6 text-lg sm:text-base font-bold transition-all duration-300 relative z-10 ${
                   pkg.highlighted
                     ? 'bg-background text-foreground hover:bg-background/95 hover:shadow-xl hover:scale-105'
                     : 'bg-primary text-primary-foreground hover:shadow-xl hover:shadow-primary/30 hover:scale-105'
