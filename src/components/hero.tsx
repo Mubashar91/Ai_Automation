@@ -53,7 +53,7 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
-          
+            
           {/* ✅ FIXED: BOOKING BUTTON NOW USES onClick + window.top.location.href */}
           <Button
             className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg sm:text-xl font-bold shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] border-0 ring-1 ring-primary/30"
