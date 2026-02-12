@@ -31,7 +31,7 @@ function App() {
         <QuestionCTA question="Where are hidden inefficiencies costing you money right now?" />
         <FAQSection />
           <CTASection />
-          <Footer /> */} */}
+          <Footer /> */} 
         </main>
       </div>
     </Providers>
