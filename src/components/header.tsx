@@ -139,7 +139,8 @@ export function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 text-foreground/70 hover:text-foreground transition-colors text-xl md:text-sm"
+                className="block px-4 py-2 text-foreground/70 hover:text-foreground transition-colors"
+                style={{ fontSize: '1.5rem' }}
               >
                 {item.label}
               </a>
@@ -147,7 +148,7 @@ export function Header() {
             
             {/* Mobile Language Switcher */}
             <div className="px-4 py-2 border-t border-border">
-              <div className="text-lg md:text-xs font-semibold text-foreground/70 mb-2">Language</div>
+              <div className="font-semibold text-foreground/70 mb-2" style={{ fontSize: '1.25rem' }}>Language</div>
               <div className="flex gap-2">
                 {(['en', 'de'] as const).map((lang) => (
                   <button
@@ -156,11 +157,12 @@ export function Header() {
                       setLanguage(lang)
                       setShowLangMenu(false)
                     }}
-                    className={`px-3 py-1 rounded text-lg md:text-sm transition-colors ${
+                    className={`px-3 py-1 rounded transition-colors ${
                       language === lang
                         ? 'bg-primary text-primary-foreground'
                         : 'bg-foreground/5 hover:bg-foreground/10'
                     }`}
+                    style={{ fontSize: '1.25rem' }}
                   >
                     {lang === 'en' ? 'EN' : 'DE'}
                   </button>
@@ -177,7 +179,8 @@ export function Header() {
                     "noopener,noreferrer"
                   );
                 }}
-                className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium h-12 text-lg md:text-base"
+                className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium h-12"
+                style={{ fontSize: '1.25rem' }}
               >
                 {t.nav.bookConsultation}
               </button>
