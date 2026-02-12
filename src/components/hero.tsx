@@ -3,88 +3,68 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/components/providers'
 import { languages } from '@/lib/languages'
-import { motion } from 'framer-motion'
 
 export function HeroSection() {
   const { language } = useLanguage()
   const t = languages[language]
 
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
-      {/* Animated background elements - constrained for mobile */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute top-1/4 -left-4 sm:left-10 w-48 h-48 sm:w-72 sm:h-72 bg-blue-500/10 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+    <section className="relative pt-16 sm:pt-20 pb-6 px-4 bg-gradient-to-br from-background via-background to-card transition-colors duration-300 overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute inset-0 opacity-[0.25]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle at 1px 1px, hsl(var(--foreground) / 0.10) 1px, transparent 0)',
+            backgroundSize: '28px 28px',
           }}
         />
-        <motion.div
-          className="absolute bottom-1/4 -right-4 sm:right-10 w-56 h-56 sm:w-96 sm:h-96 bg-purple-500/10 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-        />
+        <div className="absolute top-16 left-6 sm:top-20 sm:left-10 w-72 h-72 sm:w-96 sm:h-96 bg-primary/10 rounded-full blur-3xl motion-safe:animate-pulse motion-reduce:animate-none"></div>
+        <div className="absolute bottom-16 right-6 sm:bottom-20 sm:right-10 w-80 h-80 sm:w-[500px] sm:h-[500px] bg-primary/10 rounded-full blur-3xl motion-safe:animate-pulse motion-reduce:animate-none" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] sm:w-[700px] sm:h-[700px] bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl"></div>
       </div>
-
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="space-y-6 sm:space-y-8"
-        >
-          <div className="inline-block">
-            <span className="px-3 py-1 sm:px-4 sm:py-1.5 text-xs sm:text-sm font-medium bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full border border-blue-500/20">
-              Enterprise-Grade AI Automation
-            </span>
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+      
+      <div className="max-w-5xl mx-auto text-center relative z-10 py-4 sm:py-12">
+        <div className="inline-block mb-2 sm:mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-sm sm:text-sm font-bold sm:font-semibold text-foreground shadow-lg shadow-foreground/5">
+            <span className="inline-flex h-2 w-2 rounded-full bg-primary" />
+            Enterprise-Grade AI Automation
+          </span>
+        </div>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-black sm:font-extrabold mb-3 sm:mb-6 text-balance leading-tight sm:leading-[1.05] tracking-tight">
+          <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
-          </h1>
-
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-            {t.hero.description}
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4">
-            <Button
-              size="lg"
-              className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8"
-              onClick={() => {
-                window.open(
-                  "https://app.reclaim.ai/m/gigi-business/process--automation-consultation",
-                  "_blank",
-                  "noopener,noreferrer"
-                );
-              }}
-            >
-              {t.hero.button1}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8"
-            >
-              {t.hero.button2} 🎯
-            </Button>
-          </div>
-        </motion.div>
+          </span>
+        </h2>
+        <p className="text-lg sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-4 sm:mb-12 max-w-2xl mx-auto text-balance leading-snug sm:leading-relaxed font-medium sm:font-light">
+          {t.hero.description}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
+          <Button
+            className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full sm:w-auto px-8 sm:px-9 py-5 sm:py-6 text-lg sm:text-base font-bold sm:font-semibold shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 hover:scale-[1.03] border-0 ring-1 ring-primary/30"
+            asChild
+          >
+            <a href="#contact">
+              <span className="flex items-center gap-2">
+                {t.hero.button1}
+                <ArrowRight className="w-6 h-6 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </a>
+          </Button>
+          <Button
+            variant="outline"
+            className="group rounded-full w-full sm:w-auto px-8 sm:px-9 py-5 sm:py-6 text-lg sm:text-base border-2 bg-card/70 backdrop-blur-xl border-border text-foreground hover:border-primary transition-all duration-300 font-bold sm:font-semibold hover:scale-[1.03] shadow-lg hover:bg-card"
+            asChild
+          >
+            <a href="#benefits">
+              <span className="flex items-center gap-2">
+                {t.hero.button2}
+                <span className="text-2xl sm:text-xl group-hover:rotate-12 transition-transform">🎯</span>
+              </span>
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   )
