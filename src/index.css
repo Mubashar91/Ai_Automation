@@ -46,6 +46,12 @@ img, video, iframe {
   }
 }
 
+@media screen and (max-width: 639px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
