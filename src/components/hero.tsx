@@ -32,12 +32,12 @@ export function HeroSection() {
             Enterprise-Grade AI Automation
           </span>
         </div>
-        <h2 className="text-6xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
+        <h2 className="text-4xl sm:text-6xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
         </h2>
-        <p className="text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
+        <p className="text-lg sm:text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
           {t.hero.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
