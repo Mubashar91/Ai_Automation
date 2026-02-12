@@ -105,8 +105,8 @@ body {
 
 /* Reduce root font-size on small screens to improve mobile scaling inside iframes */
 @media (max-width: 640px) {
-  html { font-size: 16px !important; -webkit-text-size-adjust: none !important; -ms-text-size-adjust: none !important; }
-  body { font-size: 16px !important; -webkit-text-size-adjust: none !important; }
+  html { font-size: 22px !important; -webkit-text-size-adjust: none !important; -ms-text-size-adjust: none !important; }
+  body { font-size: 22px !important; -webkit-text-size-adjust: none !important; }
 }
 
 /* Force hero title sizing when embedded in constrained containers */
