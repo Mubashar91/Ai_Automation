@@ -42,13 +42,13 @@ export function HeroSection() {
         </div>
 
         {/* ✅ FIXED: REMOVED CLAMP, USING RESPONSIVE TAILWIND CLASSES */}
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
         </h2>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
+        <p className="text-xl sm:text-2xl md:text-3xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
           {t.hero.description}
         </p>
 
