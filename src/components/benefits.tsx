@@ -30,10 +30,10 @@ export function BenefitsSection() {
               <div className="w-20 h-20 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                 <CheckCircle className="w-10 h-10 text-primary" />
               </div>
-              <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {benefit.title}
               </h4>
-              <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground/80 leading-relaxed">{benefit.description}</p>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-foreground/80 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>
