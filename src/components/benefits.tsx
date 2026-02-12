@@ -33,7 +33,7 @@ export function BenefitsSection() {
               <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {benefit.title}
               </h4>
-              <p className="text-foreground/70 leading-relaxed">{benefit.description}</p>
+              <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground/80 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>
