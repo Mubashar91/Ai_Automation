@@ -32,7 +32,10 @@ export function HeroSection() {
             Enterprise-Grade AI Automation
           </span>
         </div>
-        <h2 className="text-4xl sm:text-6xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
+        <h2
+          className="text-4xl sm:text-6xl font-extrabold mb-6 text-balance leading-tight tracking-tight"
+          style={{ fontSize: 'clamp(1.8rem, 6vw, 3.75rem)' }}
+        >
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
