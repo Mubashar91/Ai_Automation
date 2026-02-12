@@ -91,7 +91,7 @@ export function PackagesSection() {
           {t.packages.subtitle}
         </p>
 
-        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-3">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
           {packages.map((pkg, idx) => (
             <Card
               key={pkg.name}
