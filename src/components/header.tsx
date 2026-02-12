@@ -28,7 +28,7 @@ export function Header() {
                 className="w-[110px] h-[80px] object-contain"
               />
             </div>
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-3xl md:text-2xl font-bold">
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">AI</span>
               <span className="text-foreground">WorldWideWorkforce</span>
             </h1>
@@ -139,7 +139,7 @@ export function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 text-foreground/70 hover:text-foreground transition-colors text-sm"
+                className="block px-4 py-2 text-foreground/70 hover:text-foreground transition-colors text-xl md:text-sm"
               >
                 {item.label}
               </a>
@@ -147,7 +147,7 @@ export function Header() {
             
             {/* Mobile Language Switcher */}
             <div className="px-4 py-2 border-t border-border">
-              <div className="text-xs font-semibold text-foreground/70 mb-2">Language</div>
+              <div className="text-lg md:text-xs font-semibold text-foreground/70 mb-2">Language</div>
               <div className="flex gap-2">
                 {(['en', 'de'] as const).map((lang) => (
                   <button
@@ -156,7 +156,7 @@ export function Header() {
                       setLanguage(lang)
                       setShowLangMenu(false)
                     }}
-                    className={`px-3 py-1 rounded text-sm transition-colors ${
+                    className={`px-3 py-1 rounded text-lg md:text-sm transition-colors ${
                       language === lang
                         ? 'bg-primary text-primary-foreground'
                         : 'bg-foreground/5 hover:bg-foreground/10'
@@ -177,7 +177,7 @@ export function Header() {
                     "noopener,noreferrer"
                   );
                 }}
-                className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium h-10"
+                className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium h-12 text-lg md:text-base"
               >
                 {t.nav.bookConsultation}
               </button>
