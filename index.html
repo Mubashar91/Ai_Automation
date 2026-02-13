@@ -14,22 +14,63 @@
     <script>
       // Force mobile detection in iframe
       (function() {
-          const inIframe = window.self !== window.top;
-          const isMobile = window.innerWidth <= 768;
-          
-          if (inIframe && isMobile) {
-              document.documentElement.classList.add('iframe-mobile');
-              document.body.classList.add('iframe-mobile');
-              
-              // Force viewport
+          const MOBILE_BREAKPOINT = 768;
+
+          const inIframe = (() => {
+              try {
+                  return window.self !== window.top;
+              } catch (e) {
+                  return true;
+              }
+          })();
+
+          if (!inIframe) return;
+
+          function getMeasuredWidth() {
+              try {
+                  if (window.frameElement && window.frameElement.getBoundingClientRect) {
+                      const rect = window.frameElement.getBoundingClientRect();
+                      if (rect && rect.width) return rect.width;
+                  }
+              } catch (e) {
+                  // ignore
+              }
+              return window.innerWidth;
+          }
+
+          function ensureViewportTag() {
               let viewport = document.querySelector('meta[name="viewport"]');
               if (!viewport) {
                   viewport = document.createElement('meta');
                   viewport.name = 'viewport';
                   document.head.appendChild(viewport);
               }
-              viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+              return viewport;
           }
+
+          function applyIframeMobileMode() {
+              const measuredWidth = getMeasuredWidth();
+              const isMobileEmbed = measuredWidth <= MOBILE_BREAKPOINT;
+
+              document.documentElement.classList.toggle('iframe-mobile', isMobileEmbed);
+              document.body.classList.toggle('iframe-mobile', isMobileEmbed);
+
+              if (isMobileEmbed) {
+                  const viewport = ensureViewportTag();
+                  viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+              }
+          }
+
+          applyIframeMobileMode();
+
+          let resizeTimer;
+          window.addEventListener('resize', function() {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(applyIframeMobileMode, 150);
+          });
+          window.addEventListener('orientationchange', function() {
+              setTimeout(applyIframeMobileMode, 150);
+          });
       })();
     </script>
   </body>               
