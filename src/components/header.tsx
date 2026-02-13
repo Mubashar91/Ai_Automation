@@ -3,12 +3,14 @@ import { Menu, X, Moon, Sun, Globe } from 'lucide-react'
 import { useState } from 'react'
 import { useLanguage } from '@/components/providers'
 import { languages } from '@/lib/languages'
+import { useIsMobile } from '@/hooks/use-mobile'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [showLangMenu, setShowLangMenu] = useState(false)
   const { language, setLanguage, isDark, setIsDark } = useLanguage()
   const t = languages[language]
+  const isMobile = useIsMobile()
 
   const navItems = [
     { label: t.nav.home, href: '#' },
@@ -35,7 +37,7 @@ export function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-8 items-center">
+          <nav className={isMobile ? 'hidden' : 'flex gap-8 items-center'}>
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -106,7 +108,7 @@ export function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className={isMobile ? 'flex items-center gap-2' : 'hidden'}>
             <button
               onClick={() => setIsDark(!isDark)}
               className="p-2 rounded-full hover:bg-foreground/10 transition-colors"
@@ -119,7 +121,7 @@ export function Header() {
               )}
             </button>
             <button
-              className="md:hidden"
+              className={isMobile ? '' : 'hidden'}
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
@@ -134,7 +136,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <nav className="md:hidden pb-4 space-y-2 animate-slide-down">
+          <nav className={isMobile ? 'pb-4 space-y-2 animate-slide-down' : 'hidden'}>
             {navItems.map((item) => (
               <a
                 key={item.label}
