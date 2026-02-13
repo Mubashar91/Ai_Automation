@@ -11,5 +11,26 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Force mobile detection in iframe
+      (function() {
+          const inIframe = window.self !== window.top;
+          const isMobile = window.innerWidth <= 768;
+          
+          if (inIframe && isMobile) {
+              document.documentElement.classList.add('iframe-mobile');
+              document.body.classList.add('iframe-mobile');
+              
+              // Force viewport
+              let viewport = document.querySelector('meta[name="viewport"]');
+              if (!viewport) {
+                  viewport = document.createElement('meta');
+                  viewport.name = 'viewport';
+                  document.head.appendChild(viewport);
+              }
+              viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+          }
+      })();
+    </script>
   </body>               
 </html>
