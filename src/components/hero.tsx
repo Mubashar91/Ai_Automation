@@ -33,26 +33,27 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] sm:w-[700px] sm:h-[700px] bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl"></div>
       </div>
       
-      <div className="max-w-5xl mx-auto text-center relative z-10 py-4 sm:py-12">
-        <div className="inline-block mb-2 sm:mb-6">
+      <div className="max-w-5xl mx-auto text-left sm:text-center relative z-10 py-4 sm:py-12">
+        <div className="inline-block mb-1 sm:mb-6">
           <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-card/80 backdrop-blur-xl border border-border rounded-full text-base font-semibold text-foreground shadow-lg shadow-foreground/5">
             <span className="inline-flex h-2 w-2 rounded-full bg-primary" />
-            Enterprise-Grade AI Automation
+            <span className="hidden sm:inline">Enterprise-Grade AI Automation</span>
+            <span className="sm:hidden">AI Automation</span>
           </span>
         </div>
 
         {/* ✅ FIXED: REMOVED CLAMP, USING RESPONSIVE TAILWIND CLASSES */}
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-balance leading-tight tracking-tight">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-3 sm:mb-6 text-balance leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
             {t.hero.title}
           </span>
          </h2> 
 
-        <p className="text-lg sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
+        <p className="text-lg sm:text-xl md:text-2xl text-foreground/70 dark:text-foreground/80 mb-4 sm:mb-8 max-w-2xl mx-auto text-balance leading-relaxed font-light">
           {t.hero.description}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center motion-safe:animate-slide-up motion-reduce:animate-none" style={{ animationDelay: '0.2s' }}>
           
           {/* ✅ FIXED: BOOKING BUTTON NOW USES onClick + window.top.location.href */}
           <Button
