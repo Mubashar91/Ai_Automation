@@ -20,17 +20,17 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/50 z-50 shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-20">
+        <div className="flex justify-between items-center h-14 sm:h-20">
           {/* Logo */}
           <div className="flex items-center group min-w-0 flex-1 sm:flex-initial">
-            <div className="w-[60px] sm:w-[80px] h-[45px] sm:h-[60px] lg:w-[110px] lg:h-[80px] flex items-center justify-center mr-2 sm:mr-3 group-hover:scale-105 transition-transform flex-shrink-0">
+            <div className="w-[44px] sm:w-[80px] h-[34px] sm:h-[60px] lg:w-[110px] lg:h-[80px] flex items-center justify-center mr-2 sm:mr-3 group-hover:scale-105 transition-transform flex-shrink-0">
               <img
                 src={isDark ? '/LOGO%205%20DARK.png' : '/logo%201.png'}
                 alt="AIWorldWideWorkforce"
                 className="w-full h-full object-contain"
               />
             </div>
-            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold truncate">
+            <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold truncate">
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">AI</span>
               <span className="text-foreground hidden sm:inline">WorldWideWorkforce</span>
             </h1>
@@ -143,7 +143,7 @@ export function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-3 sm:px-4 py-2 sm:py-3 text-foreground/70 hover:text-foreground transition-colors text-base sm:text-lg lg:text-xl"
+                className="block px-3 sm:px-4 py-2 sm:py-3 text-foreground/70 hover:text-foreground transition-colors text-sm sm:text-lg lg:text-xl"
               >
                 {item.label}
               </a>

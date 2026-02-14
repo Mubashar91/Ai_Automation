@@ -43,7 +43,7 @@ export function PillarsSection() {
           SaaS. Workflows. AI. — How to make your company efficient, scalable, and future-proof.
         </p>
 
-        <div className="flex flex-col gap-8 md:grid md:grid-cols-3">
+        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
           {pillars.map((pillar, index) => (
             <div
               key={index}
