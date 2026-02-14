@@ -34,9 +34,9 @@ const pillars: Pillar[] = [
 
 export function PillarsSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
-        <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 text-center animate-fade-in">
+        <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 text-center animate-fade-in">
           The 3 Pillars of Digitization and Process Optimization
         </h3>
         <p className="text-base sm:text-lg md:text-xl text-foreground/60 dark:text-foreground/70 text-center mb-16 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
@@ -47,7 +47,7 @@ export function PillarsSection() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl text-center border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 animate-slide-up bg-card hover:-translate-y-3 relative overflow-hidden"
+              className="group p-6 sm:p-8 rounded-2xl text-center border-2 border-border dark:border-border/50 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 animate-slide-up bg-card hover:-translate-y-3 relative overflow-hidden"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               {/* Gradient background on hover */}
@@ -70,7 +70,7 @@ export function PillarsSection() {
           ))}
         </div>
 
-        <div className="mt-12 bg-card p-10 rounded-2xl border-2 border-primary/20 dark:border-primary/30 animate-slide-up shadow-xl relative overflow-hidden group" style={{ animationDelay: '0.3s' }}>
+        <div className="mt-10 sm:mt-12 bg-card p-6 sm:p-10 rounded-2xl border-2 border-primary/20 dark:border-primary/30 animate-slide-up shadow-xl relative overflow-hidden group" style={{ animationDelay: '0.3s' }}>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
           <p className="text-sm sm:text-base md:text-lg text-foreground/80 dark:text-foreground/90 text-center leading-relaxed relative z-10">
             🚀 Most routine tasks can be automated with the right technology. We implement tailored

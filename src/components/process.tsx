@@ -93,10 +93,10 @@ export function ProcessSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
-        <h3 className="text-4xl font-bold text-foreground mb-4 text-center animate-fade-in">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-center animate-fade-in">
           {t.process.title}
         </h3>
-        <p className="text-lg text-foreground/60 dark:text-foreground/70 text-center mb-12 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <p className="text-base sm:text-lg text-foreground/60 dark:text-foreground/70 text-center mb-10 sm:mb-12 text-balance animate-slide-up" style={{ animationDelay: '0.1s' }}>
           {t.process.subtitle}
         </p>
 
@@ -104,7 +104,7 @@ export function ProcessSection() {
           {steps.map((step, idx) => (
             <Card
               key={step.step}
-              className="group border-2 border-primary/20 dark:border-primary/30 p-8 hover:border-primary dark:hover:border-primary/60 transition-all duration-500 bg-card animate-slide-up hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-2 relative overflow-hidden"
+              className="group border-2 border-primary/20 dark:border-primary/30 p-6 sm:p-8 hover:border-primary dark:hover:border-primary/60 transition-all duration-500 bg-card animate-slide-up hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-2 relative overflow-hidden"
               style={{ animationDelay: `${0.1 * idx}s` }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -116,12 +116,12 @@ export function ProcessSection() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                     {step.title}
                   </h4>
                   <ul className="space-y-2">
                     {step.items.map((item, index) => (
-                      <li key={index} className="flex gap-2 text-muted-foreground">
+                      <li key={index} className="flex gap-2 text-sm sm:text-base text-muted-foreground">
                         <span className="text-primary font-bold">•</span>
                         <span>{item}</span>
                       </li>

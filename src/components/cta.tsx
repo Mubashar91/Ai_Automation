@@ -20,8 +20,8 @@ export function QuestionCTA({
             <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
           </div>
 
-          <div className="relative z-10 flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
-            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
+          <div className="relative z-10 flex flex-col items-center justify-between gap-5 sm:gap-6 text-center sm:flex-row sm:text-left">
+            <h3 className="text-xl sm:text-3xl font-extrabold tracking-tight text-foreground">
               {question}
             </h3>
 
@@ -33,7 +33,7 @@ export function QuestionCTA({
                   "noopener,noreferrer"
                 );
               }}
-              className="group bg-primary text-primary-foreground rounded-full px-8 py-6 text-base font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] inline-flex items-center gap-3 relative overflow-hidden"
+              className="group bg-primary text-primary-foreground rounded-full px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] inline-flex items-center gap-3 relative overflow-hidden w-full sm:w-auto"
             >
               <span className="relative z-10 flex items-center gap-3">
                 {buttonText}
@@ -60,10 +60,10 @@ export function CTASection() {
       </div>
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <h3 className="text-5xl md:text-6xl font-extrabold mb-8 text-balance leading-tight animate-fade-in drop-shadow-lg tracking-tight">
+        <h3 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-6 sm:mb-8 text-balance leading-tight animate-fade-in drop-shadow-lg tracking-tight">
           {t.cta.title}
         </h3>
-        <p className="text-xl md:text-2xl mb-12 text-foreground/90 text-balance leading-relaxed animate-slide-up font-light" style={{ animationDelay: '0.1s' }}>
+        <p className="text-base sm:text-xl md:text-2xl mb-10 sm:mb-12 text-foreground/90 text-balance leading-relaxed animate-slide-up font-light" style={{ animationDelay: '0.1s' }}>
           {t.cta.description}
         </p>
 
@@ -75,7 +75,7 @@ export function CTASection() {
               "noopener,noreferrer"
             );
           }}
-          className="group bg-primary text-primary-foreground rounded-full px-10 py-6 text-lg font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-flex items-center gap-3 animate-slide-up relative overflow-hidden"
+          className="group bg-primary text-primary-foreground rounded-full px-6 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold hover:bg-primary/90 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-flex items-center gap-3 animate-slide-up relative overflow-hidden w-full sm:w-auto"
           style={{ animationDelay: '0.2s' }}
         >
           <span className="relative z-10 flex items-center gap-3">

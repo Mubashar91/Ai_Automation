@@ -63,12 +63,12 @@ export function AutomationBenefitsSection() {
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-4 animate-fade-in">
           <TrendingUp className="w-6 h-6 text-primary" />
-          <h3 className="text-4xl font-bold text-foreground">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             {t.automationBenefits.title}
           </h3>
         </div>
 
-        <div className="flex flex-col gap-6 mt-12 md:grid md:grid-cols-2">
+        <div className="flex flex-col gap-5 sm:gap-6 mt-8 sm:mt-12 md:grid md:grid-cols-2">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex gap-4 items-start animate-slide-up" style={{ animationDelay: `${0.1 * index}s` }}>
               <div className="flex-shrink-0">
@@ -77,10 +77,10 @@ export function AutomationBenefitsSection() {
                 </div>
               </div>
               <div>
-                <p className="font-bold text-foreground">
+                <p className="font-bold text-foreground text-sm sm:text-base">
                   {benefit.metric}
                 </p>
-                <p className="text-foreground/70 dark:text-foreground/80">
+                <p className="text-foreground/70 dark:text-foreground/80 text-sm sm:text-base">
                   {benefit.description}
                 </p>
               </div>
